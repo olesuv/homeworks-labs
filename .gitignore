@@ -1,0 +1,20 @@
+# Running python code
+**/tempCodeRunnerFile
+
+# Visual Studio
+**/.vs/
+**/*.exe
+**/*.vcxproj.filters
+**/*.vcxproj.user
+**/*.vcxproj
+**/*.sln
+**/x64/
+
+# Visual Studio Code
+**/.vscode/
+
+**/.git/
+**/__pycache__/
+
+
+
