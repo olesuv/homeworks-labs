@@ -1,6 +1,3 @@
-# Running python code
-**/tempCodeRunnerFile.py
-
 # Visual Studio
 **/.vs/
 **/*.exe
@@ -13,8 +10,9 @@
 # Visual Studio Code
 **/.vscode/
 
+# Git
 **/.git/
+
+# Python
 **/__pycache__/
-
-
-
+**/tempCodeRunnerFile.py
