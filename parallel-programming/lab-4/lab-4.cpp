@@ -14,7 +14,7 @@ void luParallelTask(float** mat, int size);
 
 void printMatrix(float** mat, int size);
 
-float** createRandomMatrix(int size);
+float** createRandomMatrix(int size, float minVal, float maxVal);
 
 void deleteMatrix(float** mat, int size);
 
@@ -22,12 +22,20 @@ void deleteMatrix(float** mat, int size);
 int main() {
     int AMOUNT = 0;
 
+    float minVal = 0, maxVal = 0;
+
     cout << "Enter amount of elements in matrix: ";
     cin >> AMOUNT;
 
+    cout << "Enter minimum value: ";
+    cin >> minVal;
+
+    cout << "Enter maximum value: ";
+    cin >> maxVal;
+
     srand(time(NULL)); // Seed random number generator
 
-    float** mat1 = createRandomMatrix(AMOUNT);
+    float** mat1 = createRandomMatrix(AMOUNT, minVal, maxVal);
 
     cout << "Sequential LU" << endl;
     luSequential(mat1, AMOUNT);
@@ -45,6 +53,7 @@ int main() {
 
     return 0;
 }
+
 
 
 void luSequential(float** mat, int size) {
@@ -100,12 +109,12 @@ void printMatrix(float** mat, int size) {
     cout << endl;
 }
 
-float** createRandomMatrix(int size) {
+float** createRandomMatrix(int size, float minVal, float maxVal) {
     float** mat = new float* [size];
     for (int i = 0; i < size; i++) {
         mat[i] = new float[size];
         for (int j = 0; j < size; j++) {
-            mat[i][j] = static_cast <float> (rand()) / static_cast <float> (RAND_MAX);
+            mat[i][j] = minVal + static_cast<float>(rand()) / static_cast<float>(RAND_MAX / (maxVal - minVal));
         }
     }
     return mat;
