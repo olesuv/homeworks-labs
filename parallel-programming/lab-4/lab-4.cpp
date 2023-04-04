@@ -1,19 +1,51 @@
 #include <iostream>
 #include <omp.h>
 
+
 using namespace std;
+
 
 void luSequential(float** mat, int size);
 
 void luParallelFor(float** mat, int size);
 
+void luParallelTask(float** mat, int size);
+
+
 void printMatrix(float** mat, int size);
 
+float** createRandomMatrix(int size);
+
+void deleteMatrix(float** mat, int size);
+
+
 int main() {
-    int size = 3;
-    
+    int AMOUNT = 0;
+
+    cout << "Enter amount of elements in matrix: ";
+    cin >> AMOUNT;
+
+    srand(time(NULL)); // Seed random number generator
+
+    float** mat1 = createRandomMatrix(AMOUNT);
+
+    cout << "Sequential LU" << endl;
+    luSequential(mat1, AMOUNT);
+    printMatrix(mat1, AMOUNT);
+
+    cout << "Parallel For LU" << endl;
+    luParallelFor(mat1, AMOUNT);
+    printMatrix(mat1, AMOUNT);
+
+    cout << "Parallel Task LU" << endl;
+    luParallelTask(mat1, AMOUNT);
+    printMatrix(mat1, AMOUNT);
+
+    deleteMatrix(mat1, AMOUNT);
+
     return 0;
 }
+
 
 void luSequential(float** mat, int size) {
     for (int k = 0; k < size; k++) {
@@ -66,4 +98,22 @@ void printMatrix(float** mat, int size) {
         cout << endl;
     }
     cout << endl;
+}
+
+float** createRandomMatrix(int size) {
+    float** mat = new float* [size];
+    for (int i = 0; i < size; i++) {
+        mat[i] = new float[size];
+        for (int j = 0; j < size; j++) {
+            mat[i][j] = static_cast <float> (rand()) / static_cast <float> (RAND_MAX);
+        }
+    }
+    return mat;
+}
+
+void deleteMatrix(float** mat, int size) {
+    for (int i = 0; i < size; i++) {
+        delete[] mat[i];
+    }
+    delete[] mat;
 }
