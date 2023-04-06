@@ -11,6 +11,8 @@ void luParallelFor(float** mat, int size);
 
 void luParallelTask(float** mat, int size);
 
+bool checkLU(float** A, float** L, float** U, int size);
+
 
 void printMatrix(float** mat, int size);
 
@@ -97,6 +99,27 @@ void luParallelTask(float** mat, int size) {
             }
         }
     }
+}
+
+bool checkLU(float** A, float** L, float** U, int size) {
+    for (int i = 0; i < size; i++) {
+        for (int j = 0; j < size; j++) {
+            float sum = 0;
+            for (int k = 0; k <= min(i, j); k++) {
+                sum += L[i][k] * U[k][j];
+            }
+            for (int k = max(i, j) + 1; k < size; k++) {
+                sum += L[i][k] * U[k][j];
+            }
+            if (i == j) {
+                sum += U[i][i];
+            }
+            if (A[i][j] != sum) {
+                return false;
+            }
+        }
+    }
+    return true;
 }
 
 void printMatrix(float** mat, int size) {
