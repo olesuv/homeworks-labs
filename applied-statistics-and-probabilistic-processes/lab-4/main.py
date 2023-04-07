@@ -13,11 +13,14 @@ def sample_variance(data: list):
 
 def f_15(x: int) -> float:
     if 0 <= x <= 2:
-        return -0.25 * x
-    elif 2 < x <= 4:
-        return 0.25 * x
+        return -0.125 * x + 0.25
+    elif 2 < x < 4:
+        return 0.125 * x - 0.25
+        # return 0.125 * x + -0.25
+    elif x == 4:
+        return 0.125 * x + -0.75
     elif 4 < x <= 6:
-        return -0.5 * x
+        return -0.125 * x + 0.75
     else:
         return 0
 
@@ -38,7 +41,7 @@ def neyman_method(a: int, b: int, m: float, f, n_samples: int) -> list:
     return samples
 
 
-def plot_histogram(sequence, bins=15, width=0.8):
+def plot_histogram(sequence, bins=20, width=0.8):
     plt.hist(sequence, bins=bins, rwidth=width)
 
     plt.title("Histogram of the Sequence")
@@ -51,13 +54,13 @@ def plot_histogram(sequence, bins=15, width=0.8):
 
 
 if __name__ == "__main__":
-    min_x = 0
-    max_x = 6
+    MIN = 0
+    MAX = 6
     M = 0.5
     F = f_15
-    N = 100
+    N = 1000
 
-    result = neyman_method(min_x, max_x, M, F, N)
+    result = neyman_method(MIN, MAX, M, F, N)
     result_mean = sample_mean(result)
     result_variance = sample_variance(result)
 
