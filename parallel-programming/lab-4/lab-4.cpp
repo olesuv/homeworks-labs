@@ -1,27 +1,24 @@
 #include <iostream>
 #include <omp.h>
 
-
 using namespace std;
 
+void luSequential(float **mat, int size);
 
-void luSequential(float** mat, int size);
+void luParallelFor(float **mat, int size);
 
-void luParallelFor(float** mat, int size);
+void luParallelTask(float **mat, int size);
 
-void luParallelTask(float** mat, int size);
+bool verifyLUDecomposition(float **mat, float **L, float **U, int size);
 
-bool checkLU(float** A, float** L, float** U, int size);
+void printMatrix(float **mat, int size);
 
+float **createRandomMatrix(int size, float minVal, float maxVal);
 
-void printMatrix(float** mat, int size);
+void deleteMatrix(float **mat, int size);
 
-float** createRandomMatrix(int size, float minVal, float maxVal);
-
-void deleteMatrix(float** mat, int size);
-
-
-int main() {
+int main()
+{
     int AMOUNT = 0;
 
     float minVal = 0, maxVal = 0;
@@ -35,9 +32,7 @@ int main() {
     cout << "Enter maximum value: ";
     cin >> maxVal;
 
-    srand(time(NULL)); // Seed random number generator
-
-    float** mat1 = createRandomMatrix(AMOUNT, minVal, maxVal);
+    float **mat1 = createRandomMatrix(AMOUNT, minVal, maxVal);
 
     cout << "Sequential LU" << endl;
     luSequential(mat1, AMOUNT);
@@ -51,47 +46,59 @@ int main() {
     luParallelTask(mat1, AMOUNT);
     printMatrix(mat1, AMOUNT);
 
+    cout << verifyLUDecomposition(mat1, mat1, mat1, AMOUNT) << endl;
+
     deleteMatrix(mat1, AMOUNT);
 
     return 0;
 }
 
-
-
-void luSequential(float** mat, int size) {
-    for (int k = 0; k < size; k++) {
-        for (int i = k + 1; i < size; i++) {
+void luSequential(float **mat, int size)
+{
+    for (int k = 0; k < size; k++)
+    {
+        for (int i = k + 1; i < size; i++)
+        {
             mat[i][k] = mat[i][k] / mat[k][k];
-            for (int j = k + 1; j < size; j++) {
+            for (int j = k + 1; j < size; j++)
+            {
                 mat[i][j] = mat[i][j] - mat[i][k] * mat[k][j];
             }
         }
     }
 }
 
-void luParallelFor(float** mat, int size) {
-    for (int k = 0; k < size; k++) {
+void luParallelFor(float **mat, int size)
+{
+    for (int k = 0; k < size; k++)
+    {
 #pragma omp parallel for
-        for (int i = k + 1; i < size; i++) {
+        for (int i = k + 1; i < size; i++)
+        {
             mat[i][k] = mat[i][k] / mat[k][k];
-            for (int j = k + 1; j < size; j++) {
+            for (int j = k + 1; j < size; j++)
+            {
                 mat[i][j] = mat[i][j] - mat[i][k] * mat[k][j];
             }
         }
     }
 }
 
-void luParallelTask(float** mat, int size) {
-    for (int k = 0; k < size; k++) {
+void luParallelTask(float **mat, int size)
+{
+    for (int k = 0; k < size; k++)
+    {
 #pragma omp parallel
         {
 #pragma omp single
             {
-                for (int i = k + 1; i < size; i++) {
+                for (int i = k + 1; i < size; i++)
+                {
                     mat[i][k] = mat[i][k] / mat[k][k];
 #pragma omp task
                     {
-                        for (int j = k + 1; j < size; j++) {
+                        for (int j = k + 1; j < size; j++)
+                        {
                             mat[i][j] = mat[i][j] - mat[i][k] * mat[k][j];
                         }
                     }
@@ -101,30 +108,47 @@ void luParallelTask(float** mat, int size) {
     }
 }
 
-bool checkLU(float** A, float** L, float** U, int size) {
-    for (int i = 0; i < size; i++) {
-        for (int j = 0; j < size; j++) {
-            float sum = 0;
-            for (int k = 0; k <= min(i, j); k++) {
-                sum += L[i][k] * U[k][j];
-            }
-            for (int k = max(i, j) + 1; k < size; k++) {
-                sum += L[i][k] * U[k][j];
-            }
-            if (i == j) {
-                sum += U[i][i];
-            }
-            if (A[i][j] != sum) {
+bool verifyLUDecomposition(float **mat, float **L, float **U, int size)
+{
+    // Verify that L and U are lower and upper triangular matrices
+    for (int i = 0; i < size; i++)
+    {
+        for (int j = i + 1; j < size; j++)
+        {
+            if (L[j][i] != 0 || U[i][j] != 0)
+            {
                 return false;
             }
         }
     }
+
+    // Verify that A = LU
+    float epsilon = 1e-6; // Tolerance for floating point comparison
+    for (int i = 0; i < size; i++)
+    {
+        for (int j = 0; j < size; j++)
+        {
+            float sum = 0;
+            for (int k = 0; k < size; k++)
+            {
+                sum += L[i][k] * U[k][j];
+            }
+            if (fabs(mat[i][j] - sum) > epsilon)
+            {
+                return false;
+            }
+        }
+    }
+
     return true;
 }
 
-void printMatrix(float** mat, int size) {
-    for (int i = 0; i < size; i++) {
-        for (int j = 0; j < size; j++) {
+void printMatrix(float **mat, int size)
+{
+    for (int i = 0; i < size; i++)
+    {
+        for (int j = 0; j < size; j++)
+        {
             cout << mat[i][j] << " ";
         }
         cout << endl;
@@ -132,19 +156,24 @@ void printMatrix(float** mat, int size) {
     cout << endl;
 }
 
-float** createRandomMatrix(int size, float minVal, float maxVal) {
-    float** mat = new float* [size];
-    for (int i = 0; i < size; i++) {
+float **createRandomMatrix(int size, float minVal, float maxVal)
+{
+    float **mat = new float *[size];
+    for (int i = 0; i < size; i++)
+    {
         mat[i] = new float[size];
-        for (int j = 0; j < size; j++) {
+        for (int j = 0; j < size; j++)
+        {
             mat[i][j] = minVal + static_cast<float>(rand()) / static_cast<float>(RAND_MAX / (maxVal - minVal));
         }
     }
     return mat;
 }
 
-void deleteMatrix(float** mat, int size) {
-    for (int i = 0; i < size; i++) {
+void deleteMatrix(float **mat, int size)
+{
+    for (int i = 0; i < size; i++)
+    {
         delete[] mat[i];
     }
     delete[] mat;

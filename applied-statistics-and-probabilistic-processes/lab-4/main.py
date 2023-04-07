@@ -53,6 +53,22 @@ def exponential_method(lmbda: int, n_samples: int) -> list:
     return samples
 
 
+def normal_method(m: int, sigma: float, n_samples: int) -> list:
+    samples = []
+    sum = 0
+
+    while len(samples) < n_samples:
+
+        for i in range(12):
+            ri = uniform(0, 1)
+            sum += ri
+
+        xi = m + sigma * (sum - 6)
+        samples.append(xi)
+
+    return samples
+
+
 def plot_histogram(sequence, bins=20, width=0.8):
     plt.hist(sequence, bins=bins, rwidth=width)
 
@@ -70,9 +86,12 @@ if __name__ == "__main__":
     MAX = 6
     M = 0.5
     F = f_15
-    N = 1000
+    N = 100
 
     n_exp = 15 / 10
+
+    m = 15
+    sigma_normal = 15 % 5
 
     result = neyman_method(MIN, MAX, M, F, N)
     result_mean = sample_mean(result)
@@ -84,7 +103,7 @@ if __name__ == "__main__":
 
     # plot_histogram(result)
 
-    result = exponential_method(n_exp, 100)
+    result = exponential_method(n_exp, N)
     result_mean = sample_mean(result)
     result_variance = sample_variance(result)
 
@@ -93,3 +112,13 @@ if __name__ == "__main__":
     print(f"Дисперсія: {result_variance:.2f}")
 
     # plot_histogram(result)
+
+    result = normal_method(m, sigma_normal, N)
+    result_mean = sample_mean(result)
+    result_variance = sample_variance(result)
+
+    print(f"Метод нормальним законом: {result}")
+    print(f"Математичне сподівання: {result_mean:.2f}")
+    print(f"Дисперсія: {result_variance:.2f}")
+
+    plot_histogram(result)
