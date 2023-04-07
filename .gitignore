@@ -9,6 +9,8 @@
 
 # Visual Studio Code
 **/.vscode/
+**/*.ilk/
+**/*.pdb/
 
 # PyCharm
 **/.idea/
