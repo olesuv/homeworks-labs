@@ -1,6 +1,7 @@
 from random import uniform
 from numpy import var
 import matplotlib.pyplot as plt
+from math import log, cos, sqrt, pi
 
 
 def sample_mean(data: list) -> float:
@@ -16,7 +17,6 @@ def f_15(x: int) -> float:
         return -0.125 * x + 0.25
     elif 2 < x < 4:
         return 0.125 * x - 0.25
-        # return 0.125 * x + -0.25
     elif x == 4:
         return 0.125 * x + -0.75
     elif 4 < x <= 6:
@@ -41,6 +41,18 @@ def neyman_method(a: int, b: int, m: float, f, n_samples: int) -> list:
     return samples
 
 
+def exponential_method(lmbda: int, n_samples: int) -> list:
+    samples = []
+
+    while len(samples) < n_samples:
+        ri = uniform(0, 1)
+        result = -log(1 - ri) / lmbda
+
+        samples.append(result)
+
+    return samples
+
+
 def plot_histogram(sequence, bins=20, width=0.8):
     plt.hist(sequence, bins=bins, rwidth=width)
 
@@ -60,12 +72,24 @@ if __name__ == "__main__":
     F = f_15
     N = 1000
 
+    n_exp = 15 / 10
+
     result = neyman_method(MIN, MAX, M, F, N)
     result_mean = sample_mean(result)
     result_variance = sample_variance(result)
 
-    print(f"Метод виключення (Неймана): {result}")
+    # print(f"Метод виключення (Неймана): {result}")
     print(f"Математичне сподівання: {result_mean:.2f}")
     print(f"Дисперсія: {result_variance:.2f}")
 
-    plot_histogram(result)
+    # plot_histogram(result)
+
+    result = exponential_method(n_exp, 100)
+    result_mean = sample_mean(result)
+    result_variance = sample_variance(result)
+
+    # print(f"Метод показниковим законом: {result}")
+    print(f"Математичне сподівання: {result_mean:.2f}")
+    print(f"Дисперсія: {result_variance:.2f}")
+
+    # plot_histogram(result)
