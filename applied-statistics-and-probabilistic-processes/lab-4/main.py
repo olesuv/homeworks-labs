@@ -1,7 +1,7 @@
-from random import uniform
+from random import uniform, gauss
 from numpy import var
 import matplotlib.pyplot as plt
-from math import log, cos, sqrt, pi
+from math import log
 
 
 def sample_mean(data: list) -> float:
@@ -41,7 +41,7 @@ def neyman_method(a: int, b: int, m: float, f, n_samples: int) -> list:
     return samples
 
 
-def exponential_method(lmbda: int, n_samples: int) -> list:
+def exponential_method(lmbda: float, n_samples: int) -> list:
     samples = []
 
     while len(samples) < n_samples:
@@ -57,14 +57,15 @@ def normal_method(m: int, sigma: float, n_samples: int) -> list:
     samples = []
     sum = 0
 
-    while len(samples) < n_samples:
-
-        for i in range(12):
-            ri = uniform(0, 1)
-            sum += ri
+    for i in range(n_samples):
+        for j in range(12):
+            rj = uniform(0, 1)
+            sum += rj
 
         xi = m + sigma * (sum - 6)
         samples.append(xi)
+
+        sum = 0
 
     return samples
 
@@ -97,21 +98,21 @@ if __name__ == "__main__":
     result_mean = sample_mean(result)
     result_variance = sample_variance(result)
 
-    # print(f"Метод виключення (Неймана): {result}")
+    print(f"Метод виключення (Неймана): {result}")
     print(f"Математичне сподівання: {result_mean:.2f}")
     print(f"Дисперсія: {result_variance:.2f}")
 
-    # plot_histogram(result)
+    plot_histogram(result)
 
     result = exponential_method(n_exp, N)
     result_mean = sample_mean(result)
     result_variance = sample_variance(result)
 
-    # print(f"Метод показниковим законом: {result}")
+    print(f"Метод показниковим законом: {result}")
     print(f"Математичне сподівання: {result_mean:.2f}")
     print(f"Дисперсія: {result_variance:.2f}")
 
-    # plot_histogram(result)
+    plot_histogram(result)
 
     result = normal_method(m, sigma_normal, N)
     result_mean = sample_mean(result)
@@ -120,5 +121,7 @@ if __name__ == "__main__":
     print(f"Метод нормальним законом: {result}")
     print(f"Математичне сподівання: {result_mean:.2f}")
     print(f"Дисперсія: {result_variance:.2f}")
+
+    # result = gauss(0, 1)
 
     plot_histogram(result)
