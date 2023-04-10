@@ -17,10 +17,8 @@ def f_15(x: int) -> float:
         return -0.125 * x + 0.25
     elif 2 < x < 4:
         return 0.125 * x - 0.25
-    elif x == 4:
-        return 0.125 * x + -0.75
-    elif 4 < x <= 6:
-        return -0.125 * x + 0.75
+    elif 4 <= x <= 6:
+        return -0.25 * x + 1.5
     else:
         return 0
 
@@ -74,9 +72,7 @@ def plot_histogram(sequence, bins=20, width=0.8):
     plt.hist(sequence, bins=bins, rwidth=width)
 
     plt.title("Histogram of the Sequence")
-
     plt.xlabel("Value")
-
     plt.ylabel("Frequency")
 
     plt.show()
@@ -122,6 +118,6 @@ if __name__ == "__main__":
     print(f"Математичне сподівання: {result_mean:.2f}")
     print(f"Дисперсія: {result_variance:.2f}")
 
-    # result = gauss(0, 1)
+    result = gauss(0, 1, 15)
 
     plot_histogram(result)
