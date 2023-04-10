@@ -1,5 +1,6 @@
-from random import uniform, gauss
+from random import uniform
 from numpy import var
+from numpy.random import normal
 import matplotlib.pyplot as plt
 from math import log
 
@@ -83,12 +84,12 @@ if __name__ == "__main__":
     MAX = 6
     M = 0.5
     F = f_15
-    N = 100
+    N = 1000
 
     n_exp = 15 / 10
 
     m = 15
-    sigma_normal = 15 % 5
+    sigma_normal = 5 % 15
 
     result = neyman_method(MIN, MAX, M, F, N)
     result_mean = sample_mean(result)
@@ -118,6 +119,6 @@ if __name__ == "__main__":
     print(f"Математичне сподівання: {result_mean:.2f}")
     print(f"Дисперсія: {result_variance:.2f}")
 
-    result = gauss(0, 1, 15)
+    # result = normal(size=(1000), loc=15, scale=5 % 15)
 
     plot_histogram(result)
