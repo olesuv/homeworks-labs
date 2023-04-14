@@ -1,4 +1,6 @@
 from random import random, randint
+import numpy as np
+from collections import Counter
 from math import sqrt, pi, exp
 import matplotlib.pyplot as plt
 
@@ -27,10 +29,15 @@ def generate_random_list_x(a: int, b: int, sigma: int, list_amount: int) -> list
 
 
 def plot_variancial(sequence: list) -> None:
-    plt.plot(sequence, drawstyle="steps")
+    counts = Counter(sequence)
+    x = list(counts.keys())
+    y = np.cumsum(list(counts.values())) / len(sequence)
+    plt.plot(x, y, drawstyle="steps")
+    plt.xticks(x)
     plt.title("Діаграма накопичених частот")
-    plt.xlabel("Накопичена частота")
-    plt.ylabel("Значенння")
+    plt.xlabel("Значення")
+    plt.ylabel("Накопичена частота")
+    plt.grid()
     plt.show()
 
 
