@@ -1,4 +1,4 @@
-from random import random, uniform, randint
+from random import random, randint
 from math import sqrt, pi, exp
 import matplotlib.pyplot as plt
 
@@ -26,11 +26,21 @@ def generate_random_list_x(a: int, b: int, sigma: int, list_amount: int) -> list
     return sample
 
 
-def plot_histogram(sequence):
+def plot_variancial(sequence: list) -> None:
     plt.plot(sequence, drawstyle="steps")
+    plt.title("Діаграма накопичених частот")
     plt.xlabel("Накопичена частота")
     plt.ylabel("Значенння")
+    plt.show()
+
+
+def plot_histogram(sequence: list, bins=20) -> None:
+    bins = list(range(int(min(sequence)), int(max(sequence))+2))
+    plt.hist(sequence, bins=bins, width=1, edgecolor="black")
+    plt.xticks(range(int(min(sequence)), int(max(sequence))+1))
     plt.title("Діаграма накопичених частот")
+    plt.xlabel("Значення")
+    plt.ylabel("Частота випадання")
     plt.show()
 
 
@@ -40,8 +50,8 @@ if __name__ == "__main__":
     N = 30
     STD = 15
 
-    # result = generate_random_list_x(A, B, STD, N)
-    # print(result)
-
-    result = [2, 4, 5, 5, 7]
+    result = generate_random_list_x(A, B, STD, N)
+    print(result)
+    # result = [2, 4, 5, 5, 7]
+    plot_variancial(result)
     plot_histogram(result)
