@@ -3,6 +3,7 @@ from numpy import cumsum
 from collections import Counter
 from math import sqrt, pi, exp
 import matplotlib.pyplot as plt
+import xlsxwriter
 
 
 def custom_mean(data: list, N: int) -> float:
@@ -86,6 +87,14 @@ def plot_scattering_fields(sequence: list) -> None:
     plt.ylabel("Y")
     plt.grid(True)
     plt.show()
+
+
+def create_table(a: int, b: int, data: list) -> None:
+    workbook = xlsxwriter.Workbook("Таблиця-двовимірного-розподілу.xlsx")
+    worksheet = workbook.add_worksheet()
+
+    row = 0
+    cell = 0
 
 
 if __name__ == "__main__":
