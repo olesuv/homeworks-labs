@@ -1,17 +1,24 @@
 from random import random, randint
-import numpy as np
+from numpy import cumsum
 from collections import Counter
 from math import sqrt, pi, exp
 import matplotlib.pyplot as plt
 
 
-def std_dev(data: list) -> float:
-    n = len(data)
-    mean = sum(data) / n
-    variance = sum((x - mean) ** 2 for x in data) / (n - 1)
-    std_dev = sqrt(variance)
+def custom_mean(data: list, N: int) -> float:
+    result = (1 / N) * sum(data)
+    return result
 
-    return std_dev
+
+def custom_variance(data: list, N: int) -> float:
+    mu = custom_mean(data, N)
+    result = sum((x - mu) ** 2 for x in data) / (N - 1)
+    return result
+
+
+def custom_devidation(data: list, N: int) -> float:
+    result = sqrt(custom_variance(data, N))
+    return result
 
 
 def generate_random_list_x(a: int, b: int, sigma: int, list_amount: int) -> list:
@@ -31,7 +38,7 @@ def generate_random_list_x(a: int, b: int, sigma: int, list_amount: int) -> list
 def plot_variancial(sequence: list) -> None:
     counts = Counter(sequence)
     x = list(counts.keys())
-    y = np.cumsum(list(counts.values())) / len(sequence)
+    y = cumsum(list(counts.values())) / len(sequence)
     plt.plot(x, y, drawstyle="steps")
     plt.xticks(x)
     plt.title("Діаграма накопичених частот")
@@ -58,7 +65,14 @@ if __name__ == "__main__":
     STD = 15
 
     result = generate_random_list_x(A, B, STD, N)
-    print(result)
     # result = [2, 4, 5, 5, 7]
+
+    print(
+        f"{result}\n"
+        f"Математичне сподівання: {custom_mean(result, N):.2f}, "
+        f"Дисперсія: {custom_variance(result, N):.2f}, "
+        f"Середньоквадратичне відхилення: {custom_devidation(result, N):.2f}"
+    )
+
     plot_variancial(result)
     plot_histogram(result)
