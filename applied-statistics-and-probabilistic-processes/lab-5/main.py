@@ -1,7 +1,7 @@
 from random import random, randint
 from numpy import cumsum, arange, histogram
 from collections import Counter
-from math import sqrt, pi, exp
+from math import sqrt, pi, exp, log10
 import matplotlib.pyplot as plt
 import xlsxwriter
 
@@ -93,6 +93,16 @@ def plot_scattering_fields(sequence: list) -> None:
     plt.show()
 
 
+def create_intervlas(data_amount: int, data: list) -> list:
+    result = []
+    max_x = max(max(row) for row in data)
+    min_x = min(min(row) for row in data)
+    K = round(1 + 3.2 * log10(data_amount))
+    interval = round((max_x - min_x) / K)
+
+    return interval
+
+
 def create_table(a: int, b: int, data: list) -> None:
     workbook = xlsxwriter.Workbook("Таблиця-двовимірного-розподілу.xlsx")
     worksheet = workbook.add_worksheet()
@@ -103,23 +113,24 @@ def create_table(a: int, b: int, data: list) -> None:
 
 if __name__ == "__main__":
     A = 0
-    B = 20
+    B = 30
     N = 30
     STD = 15
 
     # result = generate_random_list_x(A, B, STD, N)
     result = [2, 4, 5, 5, 7]
 
-    print(
-        f"{result}\n"
-        f"Математичне сподівання: {custom_mean(result, N):.2f}, "
-        f"Дисперсія: {custom_variance(result, N):.2f}, "
-        f"Середньоквадратичне відхилення: {custom_devidation(result, N):.2f}"
-    )
+    # print(
+    #     f"{result}\n"
+    #     f"Математичне сподівання: {custom_mean(result, N):.2f}, "
+    #     f"Дисперсія: {custom_variance(result, N):.2f}, "
+    #     f"Середньоквадратичне відхилення: {custom_devidation(result, N):.2f}"
+    # )
 
     # plot_variancial(result)
-    plot_histogram(result)
+    # plot_histogram(result)
 
-    # result = generate_random_list_x_y(A, B, STD, N)
-    # print(result)
-    # plot_scattering_fields(result)
+    result = generate_random_list_x_y(A, B, STD, N)
+    print(result)
+    print(create_intervlas(N, result))
+    plot_scattering_fields(result)
