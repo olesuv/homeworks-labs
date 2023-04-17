@@ -1,5 +1,5 @@
 from random import random, randint
-from numpy import cumsum
+from numpy import cumsum, arange, histogram
 from collections import Counter
 from math import sqrt, pi, exp
 import matplotlib.pyplot as plt
@@ -69,8 +69,12 @@ def plot_variancial(sequence: list) -> None:
 def plot_histogram(sequence: list, bins=20) -> None:
     bins = list(range(int(min(sequence)), int(max(sequence))+2))
 
-    plt.hist(sequence, bins=bins, width=1, edgecolor="black")
+    hist, _ = histogram(sequence, bins=bins)
+    hist = hist / len(sequence)
+
+    plt.bar(bins[:-1], hist, width=1, edgecolor="black")
     plt.xticks(range(int(min(sequence)), int(max(sequence))+1))
+    plt.ylim(0, 1)
     plt.title("Діаграма накопичених частот")
     plt.xlabel("Значення")
     plt.ylabel("Частота випадання")
@@ -100,22 +104,22 @@ def create_table(a: int, b: int, data: list) -> None:
 if __name__ == "__main__":
     A = 0
     B = 20
-    N = 5
+    N = 30
     STD = 15
 
     # result = generate_random_list_x(A, B, STD, N)
-    # result = [2, 4, 5, 5, 7]
+    result = [2, 4, 5, 5, 7]
 
-    # print(
-    #     f"{result}\n"
-    #     f"Математичне сподівання: {custom_mean(result, N):.2f}, "
-    #     f"Дисперсія: {custom_variance(result, N):.2f}, "
-    #     f"Середньоквадратичне відхилення: {custom_devidation(result, N):.2f}"
-    # )
+    print(
+        f"{result}\n"
+        f"Математичне сподівання: {custom_mean(result, N):.2f}, "
+        f"Дисперсія: {custom_variance(result, N):.2f}, "
+        f"Середньоквадратичне відхилення: {custom_devidation(result, N):.2f}"
+    )
 
     # plot_variancial(result)
-    # plot_histogram(result)
+    plot_histogram(result)
 
-    result = generate_random_list_x_y(A, B, STD, N)
-    print(result)
-    plot_scattering_fields(result)
+    # result = generate_random_list_x_y(A, B, STD, N)
+    # print(result)
+    # plot_scattering_fields(result)
