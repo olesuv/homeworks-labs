@@ -93,14 +93,33 @@ def plot_scattering_fields(sequence: list) -> None:
     plt.show()
 
 
-def create_intervlas(data_amount: int, data: list) -> list:
-    result = []
-    max_x = max(max(row) for row in data)
-    min_x = min(min(row) for row in data)
-    K = round(1 + 3.2 * log10(data_amount))
-    interval = round((max_x - min_x) / K)
+def create_intervals(data_amount: int, data: list) -> tuple:
+    intervals_x = []
+    intervals_y = []
 
-    return interval
+    max_x = max(row[0] for row in data)
+    min_x = min(row[0] for row in data)
+    max_y = max(row[1] for row in data)
+    min_y = min(row[1] for row in data)
+
+    k = round(1 + 3.2 * log10(data_amount))
+    interval = round((max_x - min_x) / k)
+
+    temp_interval_x = 0
+    while temp_interval_x < max_x:
+        temp_interval_x += interval
+        intervals_x.append(temp_interval_x)
+
+    temp_interval_y = 0
+    while temp_interval_y < max_y:
+        temp_interval_y += interval
+        intervals_y.append(temp_interval_y)
+
+    return intervals_x, intervals_y
+
+
+def match_intervals(data: list, intervals_x: list, intervals_y: list) -> str:
+    pass
 
 
 def create_table(a: int, b: int, data: list) -> None:
@@ -132,5 +151,5 @@ if __name__ == "__main__":
 
     result = generate_random_list_x_y(A, B, STD, N)
     print(result)
-    print(create_intervlas(N, result))
+    print(create_intervals(N, result))
     plot_scattering_fields(result)
