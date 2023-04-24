@@ -94,8 +94,8 @@ def plot_scattering_fields(sequence: list) -> None:
 
 
 def create_intervals(data_amount: int, data: list) -> tuple:
-    intervals_x = []
-    intervals_y = []
+    intervals_x = [0]
+    intervals_y = [0]
 
     max_x = max(row[0] for row in data)
     min_x = min(row[0] for row in data)
@@ -118,16 +118,30 @@ def create_intervals(data_amount: int, data: list) -> tuple:
     return intervals_x, intervals_y
 
 
-def match_intervals(data: list, intervals_x: list, intervals_y: list) -> str:
-    pass
+def match_intervals(data: list, intervals_x: list, intervals_y: list) -> None:
+    table = []
+    for i in range(len(intervals_y)-1):
+        row = []
+        for j in range(len(intervals_x)-1):
+            count = 0
+            matched_points = []
+            for point in data:
+                if intervals_x[j] <= point[0] < intervals_x[j+1] and intervals_y[i] <= point[1] < intervals_y[i+1]:
+                    count += 1
+                    matched_points.append(point)
+            row.append(count)
+            if matched_points:
+                print(f"\n{matched_points} belongs to interval {j}-{i}")
+        table.append(row)
 
+    print("\nIntervals of x-axis:")
+    for i in range(len(intervals_x)-1):
+        print(
+            f"{i}: {intervals_x[i]} - {intervals_x[i+1]}: {sum(row[i] for row in table)}")
 
-def create_table(a: int, b: int, data: list) -> None:
-    workbook = xlsxwriter.Workbook("Таблиця-двовимірного-розподілу.xlsx")
-    worksheet = workbook.add_worksheet()
-
-    row = 0
-    cell = 0
+    print("\nIntervals of y-axis:")
+    for i in range(len(intervals_y)-1):
+        print(f"{i}: {intervals_y[i]} - {intervals_y[i+1]}: {sum(table[i])}")
 
 
 if __name__ == "__main__":
@@ -150,6 +164,13 @@ if __name__ == "__main__":
     # plot_histogram(result)
 
     result = generate_random_list_x_y(A, B, STD, N)
-    print(result)
-    print(create_intervals(N, result))
+    print(f"Generated points: \n{result}")
+
+    intervals_x = create_intervals(N, result)[0]
+    intervals_y = create_intervals(N, result)[1]
+    print(f"\nIntervals by x: {intervals_x}")
+    print(f"Intervals by y: {intervals_y}")
+
+    match_intervals(result, intervals_x, intervals_y)
+
     plot_scattering_fields(result)
