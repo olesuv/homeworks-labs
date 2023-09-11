@@ -111,6 +111,39 @@ def set_index():
     return df.set_index(["Continent", "Country"])
 
 
+def value_count():
+    # Returns unique values in the index
+    return df.value_counts()
+
+
+def unique():
+    # Returns unique values from list
+    temp_list = df["Country"].values
+    return pd.unique(temp_list)
+
+
+def sum():
+    # Returns sum of selected axis
+    return df["Points"].sum()
+
+
+def mean():
+    return df["Points"].mean()
+
+
+def double_points(points: int):
+    return points ** 2
+
+
+def map():
+    df["Country"] = df["Country"].map("Ukraine".format)
+    return df
+
+
+def map_lambda():
+    return df["Points"].map(lambda x: x**2)
+
+
 if __name__ == "__main__":
     # print(read_csv_custom())
     # print(custom_header())
@@ -121,7 +154,7 @@ if __name__ == "__main__":
     # print(custom_index())
     # print(custom_dtypes())
 
-    # create_sum_column()
+    create_sum_column()
 
     # print(select_columns())
     # print(select_rows())
@@ -132,3 +165,10 @@ if __name__ == "__main__":
     # print(drop_columns())
     # print(conditional_selection())
     # print(set_index())
+
+    # print(value_count())
+    # print(unique())
+    # print(sum())
+    # print(mean())
+    # print(map())
+    # print(map_lambda())
