@@ -144,6 +144,60 @@ def map_lambda():
     return df["Points"].map(lambda x: x**2)
 
 
+def sort_ascending():
+    return df["Points"].sort_values()
+
+
+def sort_descending():
+    return df["Points"].sort_values(ascending=False)
+
+
+def grouping_1_column():
+    return df.groupby("Country")["Points"].max().reset_index()
+
+
+def grouping_2_columns():
+    return df.groupby(["Country", "RegisterDate"])["Points"].max().reset_index()
+
+
+def grouping_3_columns():
+    return df.groupby(["RegisterDate", "Country", "Continent"])["Points"].max().reset_index()
+
+
+def grouping_agg():
+    return df.groupby("Country").agg({"Points": "max"})
+
+
+def filter():
+    return df[df["Points"] > 1500]
+
+
+def filter_by_country():
+    return df[df["Country"] == "Ukraine"]
+
+
+def query():
+    return df.query('Country == "Ukraine" and Points >= 1500')
+
+
+def query_python():
+    return df.query('Country == "Ukraine" and Points >= 1500', engine='python')
+
+
+def multiple_loc():
+    return df.loc[(df["Country"] == "Ukraine") & (df["Points"] >= 1500)]
+
+
+def multiple_map():
+    value_mapping = {1000: "Low", 2000: "Medium", 3000: "High"}
+    return df["Points"].map(value_mapping)
+
+
+def multiple_paramaters_sort_values():
+    print(df.sort_values(by="Points", ascending=True, ignore_index=True))
+    print(df.sort_values(by="Points", ascending=False))
+
+
 if __name__ == "__main__":
     # print(read_csv_custom())
     # print(custom_header())
@@ -154,7 +208,7 @@ if __name__ == "__main__":
     # print(custom_index())
     # print(custom_dtypes())
 
-    create_sum_column()
+    # create_sum_column()
 
     # print(select_columns())
     # print(select_rows())
@@ -172,3 +226,19 @@ if __name__ == "__main__":
     # print(mean())
     # print(map())
     # print(map_lambda())
+
+    # print(sort_ascending())
+    # print(sort_descending())
+    # print(grouping_1_column())
+    # print(grouping_2_columns())
+    # print(grouping_3_columns())
+    # print(grouping_agg())
+    # print(filter())
+    # print(filter_by_country())
+    # print(query())
+    # print(query_python())
+
+    # print(multiple_loc())
+    # print(multiple_map())
+
+    multiple_paramaters_sort_values()
