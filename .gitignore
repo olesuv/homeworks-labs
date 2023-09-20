@@ -1,0 +1,25 @@
+# Visual Studio
+**/.vs/
+**/*.exe
+**/*.vcxproj.filters
+**/*.vcxproj.user
+**/*.vcxproj
+**/*.sln
+**/x64/
+
+# Visual Studio Code
+**/.vscode/
+**/*.ilk/
+**/*.pdb/
+
+# PyCharm
+**/.idea/
+
+# Git
+**/.git/
+
+# Python
+**/__pycache__/
+**/tempCodeRunnerFile.py
+**/env/
+**/venv/
