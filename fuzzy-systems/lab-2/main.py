@@ -1,6 +1,7 @@
-from functools import reduce
 import matplotlib.pyplot as plt
 from fractions import Fraction
+from functools import reduce
+import numpy as np
 
 
 def process_file(file_path):
@@ -23,6 +24,13 @@ def process_file(file_path):
     plt.title(f"Графік для файлу '{file_path}'")
     plt.xlabel("Ріст")
     plt.ylabel("Ступінь приналежності і-того елемента до нечіткої множини")
+
+    p = np.polyfit(x_values, y_values, 1)
+    plt.plot(x_values, np.polyval(p, x_values),
+             'r--', label=f'Лінійна регресія')
+    # : {p[0]:.2f}x + {p[1]:.2f}
+    plt.legend()
+
     plt.show()
 
 
