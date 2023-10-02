@@ -21,9 +21,9 @@ def process_file(file_path, ax):
     y_values = results
 
     ax.plot(x_values, y_values, label=f"Графік для файлу '{file_path}'")
-    p = np.polyfit(x_values, y_values, 1)
-    ax.plot(x_values, np.polyval(p, x_values),
-            'r--', label=f'Лінійна регресія')
+    # p = np.polyfit(x_values, y_values, 1)
+    # ax.plot(x_values, np.polyval(p, x_values),
+    #         'r--', label=f'Лінійна регресія')
 
 
 def parse_value(value):
