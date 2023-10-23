@@ -1,0 +1,30 @@
+.links {
+  color: grey;
+}
+
+.navbar-custom {
+  background-color: #1e2939;
+  color: white;
+}
+
+.avatar {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.organization {
+  color: #fb7745;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li::before {
+  content: "•";
+  color: #fb7745;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
