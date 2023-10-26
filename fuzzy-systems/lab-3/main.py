@@ -90,6 +90,26 @@ def stretch(x_values, y_values, beta):
     return x_values, [y**beta for y in y_values]
 
 
+def low_and_high(x_values):
+    return x_values, [min(1 - x, x) for x in x_values]
+
+
+def low_or_high(x_values):
+    return x_values, [max(1 - x, x) for x in x_values]
+
+
+def not_high(x_values):
+    return x_values, [1 - x for x in x_values]
+
+
+def slightly_low(x_values, alpha=0.2):
+    return x_values, [max(0, 1 - alpha*x) for x in x_values]
+
+
+def very_high(x_values, beta=0.2):
+    return x_values, [min(1, beta*x) for x in x_values]
+
+
 if __name__ == "__main__":
     fig, axs = plt.subplots(2, 4, figsize=(16, 8))
 
