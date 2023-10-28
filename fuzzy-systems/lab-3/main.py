@@ -39,88 +39,97 @@ def parse_value(value):
         return float(Fraction(value))
 
 
-def complement(x_values, y_values):
-    return x_values, [1 - y for y in y_values]
+def membership_low_high(x):
+    # Функція приналежності "низька і висока людина"
+    return np.minimum(1 - np.abs(x - 0.5), np.abs(x - 0.75))
+
+def membership_low_or_high(x):
+    # Функція приналежності "низька або висока людина"
+    return np.maximum(x, 1 - x)
+
+def membership_not_high(x):
+    # Функція приналежності "не висока людина"
+    return 1 - np.minimum(x, 1 - x)
+
+def membership_slightly_low(x):
+    # Функція приналежності "злегка низька людина"
+    return np.maximum(0, 1 - x**2)
+
+def membership_very_high(x):
+    # Функція приналежності "дуже висока людина"
+    return x**2
 
 
-def intersection(x_values1, y_values1, x_values2, y_values2):
-    x_new = np.linspace(max(min(x_values1), min(x_values2)),
-                        min(max(x_values1), max(x_values2)), 1000)
-    tck1 = splrep(x_values1, y_values1, s=0)
-    tck2 = splrep(x_values2, y_values2, s=0)
-    y_new1 = splev(x_new, tck1, der=0)
-    y_new2 = splev(x_new, tck2, der=0)
-    return x_new, [min(y1, y2) for y1, y2 in zip(y_new1, y_new2)]
+def check_commutativity(func, operation_name):
+    # Перевірка комутативності
+    x = np.linspace(0, 1, 100)
+    result1 = func(x)
+    result2 = func(1 - x)
 
+    plt.figure()
+    plt.plot(x, result1, label=f"{operation_name}(x)")
+    plt.plot(x, result2, label=f"{operation_name}(1 - x)")
+    plt.title(f"Перевірка комутативності для {operation_name}")
+    plt.legend()
+    plt.show()
 
-def union(x_values1, y_values1, x_values2, y_values2):
-    x_new = np.linspace(min(min(x_values1), min(x_values2)),
-                        max(max(x_values1), max(x_values2)), 1000)
-    tck1 = splrep(x_values1, y_values1, s=0)
-    tck2 = splrep(x_values2, y_values2, s=0)
-    y_new1 = splev(x_new, tck1, der=0)
-    y_new2 = splev(x_new, tck2, der=0)
-    return x_new, [max(y1, y2) for y1, y2 in zip(y_new1, y_new2)]
+def check_associativity(func, operation_name):
+    # Перевірка асоціативності
+    x = np.linspace(0, 1, 100)
+    result1 = func(func(x))
+    result2 = func(x)
 
+    plt.figure()
+    plt.plot(x, result1, label=f"{operation_name}({operation_name}(x))")
+    plt.plot(x, result2, label=f"{operation_name}(x)")
+    plt.title(f"Перевірка асоціативності для {operation_name}")
+    plt.legend()
+    plt.show()
 
-def difference(x_values1, y_values1, x_values2, y_values2):
-    x_new = np.linspace(min(x_values1), max(x_values1), 1000)
-    tck1 = splrep(x_values1, y_values1, s=0)
-    tck2 = splrep(x_values2, y_values2, s=0)
-    y_new1 = splev(x_new, tck1, der=0)
-    y_new2 = splev(x_new, tck2, der=0)
-    return x_new, [max(y1 - y2, 0) for y1, y2 in zip(y_new1, y_new2)]
+def check_distributivity(func1, func2, operation_name1, operation_name2):
+    # Перевірка дистрибутивності
+    x = np.linspace(0, 1, 100)
+    result1 = func1(operation_name1(x))
+    result2 = operation_name2(func1(x))
 
+    plt.figure()
+    plt.plot(x, result1, label=f"{operation_name1}({operation_name2}(x))")
+    plt.plot(x, result2, label=f"{operation_name2}({operation_name1}(x))")
+    plt.title(f"Перевірка дистрибутивності для {operation_name1} та {operation_name2}")
+    plt.legend()
+    plt.show()
 
-def symmetric_difference(x_values1, y_values1, x_values2, y_values2):
-    x_new = np.linspace(min(min(x_values1), min(x_values2)),
-                        max(max(x_values1), max(x_values2)), 1000)
-    tck1 = splrep(x_values1, y_values1, s=0)
-    tck2 = splrep(x_values2, y_values2, s=0)
-    y_new1 = splev(x_new, tck1, der=0)
-    y_new2 = splev(x_new, tck2, der=0)
-    return x_new, [abs(y1 - y2) for y1, y2 in zip(y_new1, y_new2)]
+def check_involution(func, operation_name):
+    # Перевірка інволюції
+    x = np.linspace(0, 1, 100)
+    result1 = func(func(x))
+    result2 = 1 - func(x)
 
+    plt.figure()
+    plt.plot(x, result1, label=f"{operation_name}({operation_name}(x))")
+    plt.plot(x, result2, label=f"1 - {operation_name}(x)")
+    plt.title(f"Перевірка інволюції для {operation_name}")
+    plt.legend()
+    plt.show()
 
-def concentrate(x_values, y_values, alpha):
-    return x_values, [y**alpha for y in y_values]
+def check_de_morgan_laws(func1, func2, operation_name1, operation_name2):
+    # Перевірка законів де Моргана
+    x = np.linspace(0, 1, 100)
+    result1 = operation_name1(func1(x))
+    result2 = func2(x)
 
-
-def stretch(x_values, y_values, beta):
-    return x_values, [y**beta for y in y_values]
-
-
-def low_and_high(x_values):
-    return x_values, [min(1 - x, x) for x in x_values]
-
-
-def low_or_high(x_values):
-    return x_values, [max(1 - x, x) for x in x_values]
-
-
-def not_high(x_values):
-    return x_values, [1 - x for x in x_values]
-
-
-def slightly_low(x_values, alpha=0.2):
-    return x_values, [max(0, 1 - alpha*x) for x in x_values]
-
-
-def very_high(x_values, beta=0.2):
-    return x_values, [min(1, beta*x) for x in x_values]
-
+    plt.figure()
+    plt.plot(x, result1, label=f"{operation_name1}({operation_name2}(x))")
+    plt.plot(x, result2, label=f"{operation_name2}({operation_name1}(x))")
+    plt.title(f"Перевірка законів де Моргана для {operation_name1} та {operation_name2}")
+    plt.legend()
+    plt.show()
 
 if __name__ == "__main__":
-    fig, axs = plt.subplots(2, 4, figsize=(16, 8))
+    fig, axs = plt.subplots(1, 2)
 
-    tall_ax = axs[0, 0]
-    short_ax = axs[0, 1]
-    complement_ax = axs[0, 2]
-    intersection_ax = axs[0, 3]
-    union_ax = axs[1, 0]
-    difference_ax = axs[1, 1]
-    symmetric_difference_ax = axs[1, 2]
-    concentration_ax = axs[1, 3]
+    tall_ax = axs[0]
+    short_ax = axs[1]
 
     print("Результати для високого чоловіка:")
     x_tall, y_tall = process_file("tall_man.txt", tall_ax)
@@ -130,31 +139,45 @@ if __name__ == "__main__":
     tall_ax.set_title("Високий чоловік")
     short_ax.set_title("Низький чоловік")
 
-    complement_ax.set_title("Доповнення")
-    intersection_ax.set_title("Перетин")
-    union_ax.set_title("Об'єднання")
-    difference_ax.set_title("Різниця")
-    symmetric_difference_ax.set_title("Симетрична різниця")
-    concentration_ax.set_title("Концентрація")
+    plt.tight_layout()
+    plt.show()
 
-    x_comp, y_comp = complement(x_tall, y_tall)
-    x_inter, y_inter = intersection(x_tall, y_tall, x_short, y_short)
-    x_uni, y_uni = union(x_tall, y_tall, x_short, y_short)
-    x_diff, y_diff = difference(x_tall, y_tall, x_short, y_short)
-    x_sym_diff, y_sym_diff = symmetric_difference(
-        x_tall, y_tall, x_short, y_short)
-    x_conc, y_conc = concentrate(x_tall, y_tall, 2)  # 2 is an example alpha
-    x_stretch, y_stretch = stretch(
-        x_tall, y_tall, 0.5)  # 0.5 is an example beta
 
-    complement_ax.plot(x_comp, y_comp, label="Complement")
-    intersection_ax.plot(x_inter, y_inter, label="Intersection")
-    union_ax.plot(x_uni, y_uni, label="Union")
-    difference_ax.plot(x_diff, y_diff, label="Difference")
-    symmetric_difference_ax.plot(
-        x_sym_diff, y_sym_diff, label="Symmetric Difference")
-    concentration_ax.plot(x_conc, y_conc, label="Concentration")
-    concentration_ax.plot(x_stretch, y_stretch, label="Stretch")
+    # Генеруємо значення x для відображення функцій приналежності
+    x = np.linspace(0, 1, 100)
+
+    # Викликаємо функції приналежності та будуємо графіки
+    fig, axs = plt.subplots(2, 3, figsize=(15, 10))
+
+    functions = [
+        ("Низька і висока людина", membership_low_high),
+        ("Низька або висока людина", membership_low_or_high),
+        ("Не висока людина", membership_not_high),
+        ("Злегка низька людина", membership_slightly_low),
+        ("Дуже висока людина", membership_very_high)
+    ]
+
+    for (title, func), ax in zip(functions, axs.flatten()):
+        ax.plot(x, func(x))
+        ax.set_title(title)
 
     plt.tight_layout()
     plt.show()
+
+    # Перевірка комутативності
+    check_commutativity(membership_low_high, "низька і висока людина")
+    check_commutativity(membership_low_or_high, "низька або висока людина")
+
+    # Перевірка асоціативності
+    check_associativity(membership_low_high, "низька і висока людина")
+    check_associativity(membership_low_or_high, "низька або висока людина")
+
+    # Перевірка дистрибутивності
+    check_distributivity(membership_low_high, membership_low_or_high, "низька і висока людина", "низька або висока людина")
+
+    # Перевірка інволюції
+    check_involution(membership_low_high, "низька і висока людина")
+    check_involution(membership_low_or_high, "низька або висока людина")
+
+    # Перевірка законів де Моргана
+    check_de_morgan_laws(membership_low_high, membership_low_or_high, "низька і висока людина", "низька або висока людина")
