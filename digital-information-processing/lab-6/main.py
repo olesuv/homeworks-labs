@@ -1,60 +1,85 @@
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
+import time
 
-
-def dft(x, inv=False):
-    X = np.empty_like(x, dtype=np.complex128)
+# Функція для прямого ДПФ
+def DFT(x):
     N = len(x)
-
+    X = np.zeros(N, dtype=np.complex64)
     for k in range(N):
         for n in range(N):
-            omega = 2 * np.pi * k * n / N
-            if inv:
-                omega = -omega
-            S = X[k] + (np.cos(omega) + np.sin(omega) * 1j) * x[n]
-            X[k] = S
-
-    if inv:
-        X = X / N
-
+            X[k] += x[n] * np.exp(-2j * np.pi * k * n / N)
     return X
 
+# Функція для зворотного ДПФ
+def IDFT(X):
+    N = len(X)
+    x = np.zeros(N, dtype=np.complex64)
+    for n in range(N):
+        for k in range(N):
+            x[n] += X[k] * np.exp(2j * np.pi * k * n / N)
+        x[n] /= N
+    return x
 
-plt.rcParams["figure.figsize"] = (15, 7)
+# Модельний ряд
+t = np.arange(0, 480, 0.7)
+X_t = np.cos(2 * np.pi * t / 10 + 1) + np.cos(2 * np.pi * t / 40 + np.pi / 2)
 
-omega = 2 * np.pi
-dt = 0.7
-t = np.arange(0, 480, dt)
-x = np.cos(t * omega / 10 + 1) + np.cos(t * omega / 40 + np.pi / 2)
-N = len(x)
-X = dft(x)
-nu = np.arange(N) / dt / N
-np.seterr(divide="ignore")
-T = 1 / nu
+# Пряме ДПФ
+start_time = time.time()
+X_freq = DFT(X_t)
+end_time = time.time()
 
+# Зворотне ДПФ
+start_time_idft = time.time()
+x_t_reconstructed = IDFT(X_freq)
+end_time_idft = time.time()
 
-# Create a figure with 3 subplots.
-fig, axes = plt.subplots(3, 1, figsize=(10, 10))
+# Коментарі до коду
+# Функція DFT використовує подвійний цикл для обчислення кожного компоненту ДПФ.
+# Функція IDFT реалізована аналогічно, але використовує зворотний знак у показнику експоненти.
 
-# Plot the first subplot.
-t = np.linspace(0, 10, 100)
-x = np.sin(2 * np.pi * t)
-axes[0].plot(t, x)
-axes[0].set_title('First subplot')
+# Визначення часу роботи програми
+time_dft = end_time - start_time
+time_idft = end_time_idft - start_time_idft
 
-# Plot the second subplot.
-X = np.fft.fft(x)
-N = len(x)
-T = np.linspace(0, N / 2, N // 2)
-f = T / N
-axes[1].plot(f, np.abs(X[:N // 2]))
-axes[1].set_title('Second subplot')
+print(f"Час роботи прямого ДПФ: {time_dft} секунд")
+print(f"Час роботи зворотного ДПФ: {time_idft} секунд")
 
-# Plot the third subplot.
-P = np.real(X[:N // 2])**2 + np.imag(X[:N // 2])**2
-axes[2].plot(f, P)
-axes[2].set_title('Third subplot')
+plt.figure(figsize=(12, 10))
 
-# Show the figure.
+# Графік виразу функції X(t)
+plt.subplot(4, 1, 1)
+plt.plot(t, X_t)
+plt.title('Графічний вираз функції X(t)')
+plt.xlabel('Час (t)')
+plt.ylabel('X(t)')
+
+# Графік фази ДПФ
+plt.subplot(4, 1, 2)
+phase = np.angle(X_freq)
+plt.plot(np.arange(len(phase)), phase)
+plt.title('Графік фази ДПФ')
+plt.xlabel('Частота')
+plt.ylabel('Фаза')
+
+# Графік амплітуди ДПФ
+plt.subplot(4, 1, 3)
+amplitude = np.abs(X_freq)
+plt.plot(np.arange(len(amplitude)), amplitude)
+plt.title('Графік амплітуди ДПФ')
+plt.xlabel('Частота')
+plt.ylabel('Амплітуда')
+
+# Графік зворотного перетворення
+plt.subplot(4, 1, 4)
+plt.plot(t, np.real(x_t_reconstructed), label='Реальна частина')
+plt.plot(t, np.imag(x_t_reconstructed), label='Уявна частина')
+plt.title('Графік зворотного перетворення')
+plt.xlabel('Час (t)')
+plt.ylabel('X(t)')
+plt.legend()
+
+# Відображення графіків
 plt.tight_layout()
 plt.show()
