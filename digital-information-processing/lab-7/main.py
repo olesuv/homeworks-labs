@@ -1,59 +1,53 @@
-import matplotlib.pyplot as plt
 import numpy as np
-import timeit
+import matplotlib.pyplot as plt
+from scipy.signal import periodogram
 
+# Задання параметрів
+t = np.arange(0, 480, 0.7)  # Генерація послідовності t
+X_t = np.cos(2 * np.pi * t / 10 + 1) + np.cos(2 * np.pi * t / 40 + np.pi / 2)  # Обчислення X(t)
 
-def W(k, N, n=1):
-    return np.exp(-2 * np.pi * 1j * k * n / N)
+frequencies, periodogram = plt.psd(X_t, NFFT=len(t), Fs=1/(t[1]-t[0]))
 
+# Пряме ШПФ
+X_f = np.fft.fft(X_t)  # Виконання прямого ШПФ
+frequencies_fft = np.fft.fftfreq(len(t), t[1]-t[0])
+periodogram_fft = np.abs(X_f)**2
 
-def dft2(x):
-    N = len(x)
+# Зворотне ШПФ
+X_t_reconstructed = np.fft.ifft(X_f)  # Виконання зворотного ШПФ
 
-    if N % 2 > 0:
-        raise ValueError("Pair count only should be")
+# Оцінка часу виконання ШПФ
+import time
 
-    x1 = x[::2]
-    x2 = x[1::2]
+start_time = time.time()
+X_f = np.fft.fft(X_t)
+end_time = time.time()
 
-    return [x1[k] + W(k, N) * x2[k] for k in range(N/2)]
+execution_time = end_time - start_time
 
+# Виведення результатів
+# print("Результат прямого ШПФ:", X_f)
+# print("Результат зворотного ШПФ:", X_t_reconstructed)
+print(f"Час виконання ШПФ: {execution_time} секунд")
 
-x2 = x[:500]
+# Побудова графіків
+fig, axs = plt.subplots(3, 1, figsize=(10, 10))
 
-t1 = timeit.timeit('dft(2x)', setup='from __main__ import dft, x2', number=1)
-print(t1)
+# Графік функції
+axs[0].plot(t, X_t)
+axs[0].set_title('Графік функції X(t)')
 
-t2 = timeit.timeit('dft(x2)', setup="from __main__ import dft2, x2", number=1)
-print(t2)
+# Періодограма (вихідна)
+axs[1].plot(frequencies, periodogram)
+axs[1].set_title('Періодограма (вихідна)')
 
+# Періодограма (ШПФ)
+axs[2].plot(frequencies_fft, periodogram_fft)
+axs[2].set_title('Періодограма (ШПФ)')
 
-X = dft2(x)
+# Налаштування відступів між сабплотами
+plt.tight_layout()
 
-# Compute the magnitude and phase of X.
-A = np.abs(X)
-P = np.angle(X)
-
-# Get the number of samples in x.
-N = len(x)
-
-# Compute the normalized frequencies.
-nu = np.arange(N) / N * 1 / N
-
-# Compute the period of the signal.
-T = 1 / nu
-
-# Plot the magnitude and phase of X.
-plt.subplot(2, 1, 1)
-plt.semilogy(T[0:N // 2], A[0:N // 2])
-plt.xlim([0, 100])
-plt.xticks(np.arange(0, 100, step=10))
-plt.grid()
-
-plt.subplot(2, 1, 2)
-plt.plot(T[0:N // 2], P[0:N // 2])
-plt.xlim([0, 100])
-plt.xticks(np.arange(0, 100, step=10))
-plt.grid()
-
+# Показати графіки
 plt.show()
+
