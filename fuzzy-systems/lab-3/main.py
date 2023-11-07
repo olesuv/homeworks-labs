@@ -1,183 +1,75 @@
-import matplotlib.pyplot as plt
-from fractions import Fraction
-from functools import reduce
 import numpy as np
-from scipy.interpolate import splrep, splev
+import seaborn as sns
+import matplotlib.pyplot as plt
+import pandas as pd
 
+# Define the membership functions for "low person" and "high person"
+height_range = np.arange(150, 201)
+low_person = np.maximum(0, 1 - abs((height_range - 150) / 25))  # Corrected for "low person"
+high_person = np.maximum(0, 1 - abs((height_range - 200) / 25))  # Corrected for "high person"
 
-def process_file(file_path, ax):
-    results = []
+# Define the complement function
+def complement(fuzzy_set):
+    return 1 - fuzzy_set
 
-    with open(file_path, "r") as f:
-        data = [list(map(parse_value, line.split())) for line in f]
+# Set Seaborn style
+sns.set(style="darkgrid")
 
-    for row in data:
-        result = (reduce(lambda x, y: float(x) * float(y),
-                         row[1:]) / max(row[1:])) ** (1/7)
-        results.append(result)
+# Create a Pandas DataFrame to work with Seaborn
+data = {
+    'Зріст (см)': height_range,
+    'Низька людина': low_person,
+    'Висока людина': high_person
+}
+df = pd.DataFrame(data)
+print(df)
 
-    print(results)
+# Plot the membership functions
+plt.figure(figsize=(10, 5))
+sns.lineplot(data=df, x='Зріст (см)', y='Низька людина', label="Низька людина")
+sns.lineplot(data=df, x='Зріст (см)', y='Висока людина', label="Висока людина")
+plt.xlabel("Зріст (см)")
+plt.ylabel("Функція приналежності")
+plt.title("Функція приналежності для 'Низька людина' та 'Висока людина' ")
+plt.legend(loc='upper right')
+plt.grid(True)
 
-    x_values = [row[0] for row in data]
-    y_values = [val / max(results) for val in results]
+# Operations on fuzzy sets
+intersection = np.minimum(low_person, high_person)  # "Low and High Person"
+union = np.maximum(low_person, high_person)  # "Low or High Person"
+complement_high = complement(high_person)  # "Not High Person"
+concentration_low = low_person ** 0.5  # "Slightly Low Person"
+stretch_high = high_person ** 2  # "Very High Person"
 
-    # Perform S-aproximation
-    tck = splrep(x_values, y_values, s=0)
-    x_new = np.linspace(min(x_values), max(x_values), 1000)
-    y_new = splev(x_new, tck, der=0)
+# Plot the resulting membership functions
+plt.figure(figsize=(10, 5))
+sns.lineplot(data=df, x='Зріст (см)', y=intersection, label="Низька та Висока людина")
+sns.lineplot(data=df, x='Зріст (см)', y=union, label="Низька або Висока людина")
+sns.lineplot(data=df, x='Зріст (см)', y=complement_high, label="Не Висока людина")
+sns.lineplot(data=df, x='Зріст (см)', y=concentration_low, label="Злегка Низька людина")
+sns.lineplot(data=df, x='Зріст (см)', y=stretch_high, label="Дуже висока людина")
+plt.xlabel("Зріст (см)")
+plt.ylabel("Функція приналежності")
+plt.title("Функції приналежності для визначених операторів")
+plt.legend(loc='upper right')
+plt.grid(True)
 
-    ax.plot(x_values, y_values, 'o', label=f"{file_path}")
-    ax.plot(x_new, y_new, label=f"S-aproximation for '{file_path}'")
+# Show the plots
+plt.show()
 
-    return x_new, y_new
-
-
-def parse_value(value):
-    try:
-        return float(value)
-    except ValueError:
-        return float(Fraction(value))
-
-
-def membership_low_high(x):
-    # Функція приналежності "низька і висока людина"
-    return np.minimum(1 - np.abs(x - 0.5), np.abs(x - 0.75))
-
-def membership_low_or_high(x):
-    # Функція приналежності "низька або висока людина"
-    return np.maximum(x, 1 - x)
-
-def membership_not_high(x):
-    # Функція приналежності "не висока людина"
-    return 1 - np.minimum(x, 1 - x)
-
-def membership_slightly_low(x):
-    # Функція приналежності "злегка низька людина"
-    return np.maximum(0, 1 - x**2)
-
-def membership_very_high(x):
-    # Функція приналежності "дуже висока людина"
-    return x**2
-
-
-def check_commutativity(func, operation_name):
-    # Перевірка комутативності
-    x = np.linspace(0, 1, 100)
-    result1 = func(x)
-    result2 = func(1 - x)
-
-    plt.figure()
-    plt.plot(x, result1, label=f"{operation_name}(x)")
-    plt.plot(x, result2, label=f"{operation_name}(1 - x)")
-    plt.title(f"Перевірка комутативності для {operation_name}")
-    plt.legend()
-    plt.show()
-
-def check_associativity(func, operation_name):
-    # Перевірка асоціативності
-    x = np.linspace(0, 1, 100)
-    result1 = func(func(x))
-    result2 = func(x)
-
-    plt.figure()
-    plt.plot(x, result1, label=f"{operation_name}({operation_name}(x))")
-    plt.plot(x, result2, label=f"{operation_name}(x)")
-    plt.title(f"Перевірка асоціативності для {operation_name}")
-    plt.legend()
-    plt.show()
-
-def check_distributivity(func1, func2, operation_name1, operation_name2):
-    # Перевірка дистрибутивності
-    x = np.linspace(0, 1, 100)
-    result1 = func1(operation_name1(x))
-    result2 = operation_name2(func1(x))
-
-    plt.figure()
-    plt.plot(x, result1, label=f"{operation_name1}({operation_name2}(x))")
-    plt.plot(x, result2, label=f"{operation_name2}({operation_name1}(x))")
-    plt.title(f"Перевірка дистрибутивності для {operation_name1} та {operation_name2}")
-    plt.legend()
-    plt.show()
-
-def check_involution(func, operation_name):
-    # Перевірка інволюції
-    x = np.linspace(0, 1, 100)
-    result1 = func(func(x))
-    result2 = 1 - func(x)
-
-    plt.figure()
-    plt.plot(x, result1, label=f"{operation_name}({operation_name}(x))")
-    plt.plot(x, result2, label=f"1 - {operation_name}(x)")
-    plt.title(f"Перевірка інволюції для {operation_name}")
-    plt.legend()
-    plt.show()
-
-def check_de_morgan_laws(func1, func2, operation_name1, operation_name2):
-    # Перевірка законів де Моргана
-    x = np.linspace(0, 1, 100)
-    result1 = operation_name1(func1(x))
-    result2 = func2(x)
-
-    plt.figure()
-    plt.plot(x, result1, label=f"{operation_name1}({operation_name2}(x))")
-    plt.plot(x, result2, label=f"{operation_name2}({operation_name1}(x))")
-    plt.title(f"Перевірка законів де Моргана для {operation_name1} та {operation_name2}")
-    plt.legend()
-    plt.show()
-
-if __name__ == "__main__":
-    fig, axs = plt.subplots(1, 2)
-
-    tall_ax = axs[0]
-    short_ax = axs[1]
-
-    print("Результати для високого чоловіка:")
-    x_tall, y_tall = process_file("tall_man.txt", tall_ax)
-    print("\nРезультати для низького чоловіка:")
-    x_short, y_short = process_file("short_man.txt", short_ax)
-
-    tall_ax.set_title("Високий чоловік")
-    short_ax.set_title("Низький чоловік")
-
-    plt.tight_layout()
-    plt.show()
-
-
-    # Генеруємо значення x для відображення функцій приналежності
-    x = np.linspace(0, 1, 100)
-
-    # Викликаємо функції приналежності та будуємо графіки
-    fig, axs = plt.subplots(2, 3, figsize=(15, 10))
-
-    functions = [
-        ("Низька і висока людина", membership_low_high),
-        ("Низька або висока людина", membership_low_or_high),
-        ("Не висока людина", membership_not_high),
-        ("Злегка низька людина", membership_slightly_low),
-        ("Дуже висока людина", membership_very_high)
-    ]
-
-    for (title, func), ax in zip(functions, axs.flatten()):
-        ax.plot(x, func(x))
-        ax.set_title(title)
-
-    plt.tight_layout()
-    plt.show()
-
-    # Перевірка комутативності
-    check_commutativity(membership_low_high, "низька і висока людина")
-    check_commutativity(membership_low_or_high, "низька або висока людина")
-
-    # Перевірка асоціативності
-    check_associativity(membership_low_high, "низька і висока людина")
-    check_associativity(membership_low_or_high, "низька або висока людина")
-
-    # Перевірка дистрибутивності
-    check_distributivity(membership_low_high, membership_low_or_high, "низька і висока людина", "низька або висока людина")
-
-    # Перевірка інволюції
-    check_involution(membership_low_high, "низька і висока людина")
-    check_involution(membership_low_or_high, "низька або висока людина")
-
-    # Перевірка законів де Моргана
-    check_de_morgan_laws(membership_low_high, membership_low_or_high, "низька і висока людина", "низька або висока людина")
+# Verification of basic properties of operations
+print("Перевірка основних властивостей операцій")
+# Commutativity
+print("Комутативність (A та B = B та A):", np.array_equal(intersection, np.minimum(high_person, low_person)))
+# Associativity
+A = low_person
+B = high_person
+C = union
+D = np.maximum(np.maximum(low_person, high_person), union)
+print("Асоціативність (A і (B та C) = (A і B) і C):", np.array_equal(np.minimum(A, np.minimum(B, C)), np.minimum(np.minimum(A, B), C)))
+# Distributivity
+print("Дистрибутивність (A і (B або C) = (A і B) або (A і C)):", np.array_equal(np.minimum(A, np.maximum(B, C)), np.maximum(np.minimum(A, B), np.minimum(A, C))))
+# Involution
+print("Інволюція:", np.array_equal(complement(complement(A)), A))
+# De Morgan's Laws
+print("Закони де Моргана:", np.array_equal(complement(union), np.minimum(complement(A), complement(B))))
