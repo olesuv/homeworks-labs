@@ -76,13 +76,6 @@ layout = go.Layout(title='Вартість людини та її галузь',
 
 box_plot_worth_category = go.Figure(data=box_traces, layout=layout)
 
-# Bar chart for Tax Revenue and Total Tax Rate
-bar_tax_revenue_total_rate = px.bar(df, x='tax_revenue_country_country',
-                                    y='total_tax_rate_country', title='Податкові надходження порівняно із загальною податковою ставкою')
-
-# Scatter plot for CPI and GDP
-scatter_cpi_gdp = px.scatter(
-    df, x='cpi_country', y='gdp_country', title='ІСЦ до ВВП')
 
 choropleth_map = px.choropleth(df,
                                locations='country',
@@ -97,6 +90,45 @@ choropleth_map.update_geos(fitbounds="locations", visible=False)
 choropleth_map.update_layout(mapbox_style="carto-positron",
                              mapbox_zoom=1,
                              margin={"r": 0, "t": 0, "l": 0, "b": 0})
+
+# Calculate the mean CPI for each country
+cpi_by_country = df.groupby('countryOfCitizenship')[
+    'cpi_country'].mean().reset_index()
+
+# Sort the DataFrame by CPI values in ascending order
+cpi_by_country_sorted = cpi_by_country.sort_values(by='cpi_country')
+
+# Create a bar plot with ascending order
+bar_plot = px.bar(cpi_by_country_sorted, x='cpi_country',
+                  y='countryOfCitizenship', title='CPI (коефіцієнт корупції) країни', orientation='h')
+
+cpi_by_country_map = px.choropleth(cpi_by_country, locations='countryOfCitizenship',
+                                   locationmode='country names',  color='cpi_country')
+
+# Remove duplicates from the DataFrame
+df_unique = df.drop_duplicates(subset='countryOfCitizenship', keep='first')
+
+# Remove duplicates from the DataFrame
+df_unique = df.drop_duplicates(subset='countryOfCitizenship', keep='first')
+
+# Create a dot plot
+dot_plot = px.scatter(df_unique, x='life_expectancy_country', y='population_country',
+                      title='Кількість популяції проти довжини життя')
+# Adjust text position for better visibility
+dot_plot.update_traces(textposition='top center')
+
+# Remove duplicates from the DataFrame
+df_unique = df.drop_duplicates(subset='countryOfCitizenship', keep='first')
+
+# Sort the DataFrame by life expectancy in ascending order
+df_sorted = df_unique.sort_values(by='life_expectancy_country')
+
+# Create a bar chart for life expectancies with sorted data
+bar_chart = px.bar(df_sorted, x='life_expectancy_country', y='countryOfCitizenship',
+                   title='Довжина життя по країнах', labels={'life_expectancy_country': 'Life Expectancy'})
+
+# Set the category order to ascending
+bar_chart.update_xaxes(categoryorder='total ascending')
 
 
 app.layout = html.Div([
@@ -125,25 +157,24 @@ app.layout = html.Div([
     ], style={'width': '49%', 'display': 'inline-block'}),
 
     html.Div([
-        dcc.Graph(figure=bar_tax_revenue_total_rate),
-    ], style={'width': '49%', 'display': 'inline-block'}),
-
-
-    html.Div([
-        dcc.Graph(figure=scatter_cpi_gdp)
-    ], style={'width': '49%', 'display': 'inline-block'}),
-
-    html.Div([
         dcc.Graph(figure=choropleth_map)
     ], style={'width': '49%', 'display': 'inline-block'}),
 
-    # html.Div([ dcc.Graph(id='choropleth-map', figure=map_figure),
-    #     dcc.Dropdown(id='variable-dropdown',
-    #                  options=[{'label': var, 'value': var}
-    #                           for var in map_options],
-    #                  value=initial_variable)
-    # ], style={'width': '49%', 'display': 'inline-block'}),
+    html.Div([
+        dcc.Graph(figure=bar_plot)
+    ], style={'width': '69%', 'display': 'inline-block'}),
 
+    html.Div([
+        dcc.Graph(figure=cpi_by_country_map)
+    ], style={'width': '29%', 'display': 'inline-block'}),
+
+    html.Div([
+        dcc.Graph(figure=dot_plot)
+    ], style={'width': '49%', 'display': 'inline-block'}),
+
+    html.Div([
+        dcc.Graph(figure=bar_chart)
+    ], style={'width': '49%', 'display': 'inline-block'}),
 ])
 
 
