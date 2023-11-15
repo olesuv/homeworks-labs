@@ -1,4 +1,5 @@
 import math
+import matplotlib.pyplot as plt
 
 a = 0
 b = 10
@@ -106,6 +107,11 @@ def main():
     file1.close()
     file2.close()
 
+    in_e_val = read_txt("inE.txt")
+    in_ad_e_val = read_txt("inAdE.txt")
+
+    plotting(in_e_val, in_ad_e_val)
+
 
 def tabulation():
     a = 0.1
@@ -122,6 +128,41 @@ def tabulation():
 
     output.close()
 
+def read_txt(file_name) -> list[float]:
+    inE_x_values = []
+    inE_y_values = []
+
+    with open(file_name, 'r') as file:
+        lines = file.readlines()
+
+    for line in lines:
+        if line.startswith("Nopt"):
+            break
+
+        x, y = map(float, line.split())
+
+        inE_x_values.append(x)
+        inE_y_values.append(y)
+
+    return inE_x_values, inE_y_values
+
+
+def plotting(inE, inAdE) -> None:
+    plt.figure(figsize=(15, 6))
+
+    plt.subplot(1, 2, 1)
+    plt.plot(inE[0], inE[1])
+    plt.title("Input error values")
+    plt.xlabel("X")
+    plt.ylabel("Y")
+
+    plt.subplot(1, 2, 2)
+    plt.plot(inAdE[0], inAdE[1])
+    plt.title("Adaptive method error values")
+    plt.xlabel("X")
+    plt.ylabel("Y")
+
+    plt.show()
 
 if __name__ == "__main__":
     main()
