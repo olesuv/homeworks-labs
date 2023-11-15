@@ -1,4 +1,5 @@
 import math
+import matplotlib.pyplot as plt
 
 
 def f(x):
@@ -93,12 +94,48 @@ with open("output.txt", "w") as fdata:
 
 print("File 'output.txt' generated.")
 
-h_values = []
-eps_values = []
+# Reading and plotting
+in_x_values = []
+in_y_values = []
 
-with open("output.txt", "r") as f:
-    for line in f:
-        if not line.startswith(('yp0=', 'h0=', 'h1=', 'R0=', 'R1=', 'R2=', 'R3=', 'p=')):
-            h, eps = map(float, line.split())
-            h_values.append(h)
-            eps_values.append(eps)
+with open('in.txt', 'r') as file:
+    lines = file.readlines()
+
+for line in lines:
+    x, y = map(float, line.split())
+
+    in_x_values.append(x)
+    in_y_values.append(y)
+
+eps_x_values = []
+eps_y_values = []
+
+with open('output.txt', 'r') as file:
+    lines = file.readlines()
+
+for line in lines:
+    if line.startswith("yp0="):
+        break
+
+    x, y = map(float, line.split())
+
+    eps_x_values.append(x)
+    eps_y_values.append(y)
+
+
+plt.figure(figsize=(10, 6))
+
+plt.subplot(1, 2, 1)
+plt.plot(in_x_values, in_y_values, label="Input values")
+plt.xlabel("X")
+plt.ylabel("Y")
+plt.legend()
+
+plt.subplot(1, 2, 2)
+plt.plot(eps_x_values, eps_y_values, label="Eps values")
+plt.xlabel("X")
+plt.ylabel("Y")
+plt.legend()
+
+plt.suptitle("Input and Eps values")
+plt.show()
