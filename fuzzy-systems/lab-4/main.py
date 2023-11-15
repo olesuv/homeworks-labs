@@ -1,21 +1,27 @@
 import numpy as np
-import matplotlib.pyplot as plt
 
-# Ініціалізація множин та характеристик
-X = ["менеджер", "програміст", "водій", "секретар"]
-Y = ["гнучкість мислення", "уміння швидко приймати рішення", "концентрація уваги", "зорова пам'ять", "витривалість", "швидкість реакції рухів", "відповідальність"]
-Z = ["Андрієнко", "Василенко", "Іваненко", "Дмитренко", "Петренко", "Романенко"]
+def fuzzy_composition(relation1, relation2):
+    if len(relation1[0]) != len(relation2):
+        raise ValueError("Неможливо виконати композицію: розміри відношень не підходять")
 
-# Ініціалізація нечітких відношень MS та MQ у вигляді матриць
-# Введення даних експертів
-MS_data = [
+    result = np.zeros((len(relation1), len(relation2[0])))
+
+    for i in range(len(relation1)):
+        for j in range(len(relation2[0])):
+            max_min = max(min(relation1[i][k], relation2[k][j]) for k in range(len(relation2)))
+            result[i][j] = max_min
+
+    return result
+
+# Введення матриць MS і MQ
+MS = np.array([
     [0.8, 0.2, 0.1, 0.7, 0.6, 0.3, 0.9],
     [0.3, 0.9, 0.7, 0.4, 0.5, 0.8, 0.2],
     [0.2, 0.3, 0.8, 0.5, 0.1, 0.4, 0.6],
     [0.6, 0.5, 0.4, 0.9, 0.7, 0.2, 0.8]
-]
+])
 
-MQ_data = [
+MQ = np.array([
     [0.9, 0.3, 0.2, 0.8, 0.6, 0.7],
     [0.2, 0.8, 0.6, 0.4, 0.3, 0.9],
     [0.7, 0.4, 0.9, 0.5, 0.2, 0.1],
@@ -23,30 +29,8 @@ MQ_data = [
     [0.8, 0.2, 0.7, 0.1, 0.4, 0.5],
     [0.3, 0.7, 0.5, 0.9, 0.6, 0.8],
     [0.6, 0.9, 0.1, 0.2, 0.7, 0.3]
-]
+])
 
-MS = np.array(MS_data)
-MQ = np.array(MQ_data)
-
-# Операція композиції нечітких відношень
-composition = np.dot(MS, MQ)
-
-print(composition)
-
-# Визначення переваг та недоліків
-advantages = np.max(composition, axis=1)
-disadvantages = np.min(composition, axis=1)
-
-print()
-
-# Виведення результатів
-for i in range(len(X)):
-    print(f"Спеціальність: {X[i]}, Перевага: {advantages[i]}, Недолік: {disadvantages[i]}")
-
-# Побудова графіка
-plt.imshow(composition, cmap='viridis', interpolation='none')
-plt.colorbar(label='Значення композиції')
-plt.xticks(np.arange(len(Z)), Z, rotation=45)
-plt.yticks(np.arange(len(X)), X)
-plt.title("Матриця композиції")
-plt.show()
+# Виклик функції для композиції
+result = fuzzy_composition(MS, MQ)
+print(result)
