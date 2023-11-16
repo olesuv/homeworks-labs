@@ -1,0 +1,8914 @@
+
+k1
+
+ISF
+SS
+ISS
+Number of iterations k=1
+0.000000e+00
+0.000000e+00
+
+k2
+
+ISF
+SS
+ISS
+Number of iterations k=2
+1.000000e-02
+1.000000e-02
+
+k3
+
+ISF
+SS
+ISS
+Number of iterations k=3
+2.000000e-02
+0.000000e+00
+
+k4
+
+ISF
+SS
+ISS
+Number of iterations k=4
+3.000000e-02
+1.000000e-02
+
+k5
+
+ISF
+SS
+ISS
+Number of iterations k=5
+4.000000e-02
+0.000000e+00
+
+k6
+
+ISF
+SS
+ISS
+Number of iterations k=6
+5.000000e-02
+1.000000e-02
+
+k7
+
+ISF
+SS
+ISS
+Number of iterations k=7
+6.000000e-02
+0.000000e+00
+
+k8
+
+ISF
+SS
+ISS
+Number of iterations k=8
+7.000000e-02
+1.000000e-02
+
+k9
+
+ISF
+SS
+ISS
+Number of iterations k=9
+8.000000e-02
+2.000000e-02
+
+k10
+
+ISF
+SS
+ISS
+Number of iterations k=10
+9.000000e-02
+1.000000e-02
+
+k11
+
+ISF
+SS
+ISS
+Number of iterations k=11
+1.000000e-01
+2.000000e-02
+
+k12
+
+ISF
+SS
+ISS
+Number of iterations k=12
+1.100000e-01
+1.000000e-02
+
+k13
+
+ISF
+SS
+ISS
+Number of iterations k=13
+1.200000e-01
+2.000000e-02
+
+k14
+
+ISF
+SS
+ISS
+Number of iterations k=14
+1.300000e-01
+3.000000e-02
+
+k15
+
+ISF
+SS
+ISS
+Number of iterations k=15
+1.400000e-01
+2.000000e-02
+
+k16
+
+ISF
+SS
+ISS
+Number of iterations k=16
+1.500000e-01
+3.000000e-02
+
+k17
+
+ISF
+SS
+ISS
+Number of iterations k=17
+1.600000e-01
+4.000000e-02
+
+k18
+
+ISF
+SS
+ISS
+Number of iterations k=18
+1.700000e-01
+3.000000e-02
+
+k19
+
+ISF
+SS
+ISS
+Number of iterations k=19
+1.800000e-01
+4.000000e-02
+
+k20
+
+ISF
+SS
+ISS
+Number of iterations k=20
+1.900000e-01
+5.000000e-02
+
+k21
+
+ISF
+SS
+ISS
+Number of iterations k=21
+2.000000e-01
+4.000000e-02
+
+k22
+
+ISF
+SS
+ISS
+Number of iterations k=22
+2.100000e-01
+5.000000e-02
+
+k23
+
+ISF
+SS
+ISS
+Number of iterations k=23
+2.200000e-01
+6.000000e-02
+
+k24
+
+ISF
+SS
+ISS
+Number of iterations k=24
+2.300000e-01
+5.000000e-02
+
+k25
+
+ISF
+SS
+ISS
+Number of iterations k=25
+2.400000e-01
+6.000000e-02
+
+k26
+
+ISF
+SS
+ISS
+Number of iterations k=26
+2.500000e-01
+7.000000e-02
+
+k27
+
+ISF
+SS
+ISS
+Number of iterations k=27
+2.600000e-01
+8.000000e-02
+
+k28
+
+ISF
+SS
+ISS
+Number of iterations k=28
+2.700000e-01
+9.000000e-02
+
+k29
+
+ISF
+SS
+ISS
+Number of iterations k=29
+2.800000e-01
+8.000000e-02
+
+k30
+
+ISF
+SS
+ISS
+Number of iterations k=30
+2.900000e-01
+9.000000e-02
+
+k31
+
+ISF
+SS
+ISS
+Number of iterations k=31
+3.000000e-01
+1.000000e-01
+
+k32
+
+ISF
+SS
+ISS
+Number of iterations k=32
+3.100000e-01
+1.100000e-01
+
+k33
+
+ISF
+SS
+ISS
+SS
+ISS
+Number of iterations k=33
+3.300000e-01
+1.100000e-01
+
+k34
+
+ISF
+SS
+ISS
+Number of iterations k=34
+3.300000e-01
+1.100000e-01
+
+k35
+
+ISF
+SS
+ISS
+Number of iterations k=35
+3.400000e-01
+1.200000e-01
+
+k36
+
+ISF
+SS
+ISS
+Number of iterations k=36
+3.500000e-01
+1.300000e-01
+
+k37
+
+ISF
+SS
+ISS
+Number of iterations k=37
+3.600000e-01
+1.400000e-01
+
+k38
+
+ISF
+SS
+ISS
+Number of iterations k=38
+3.700000e-01
+1.500000e-01
+
+k39
+
+ISF
+SS
+ISS
+Number of iterations k=39
+3.800000e-01
+1.600000e-01
+
+k40
+
+ISF
+SS
+ISS
+Number of iterations k=40
+3.900000e-01
+1.700000e-01
+
+k41
+
+ISF
+SS
+ISS
+Number of iterations k=41
+4.000000e-01
+1.800000e-01
+
+k42
+
+ISF
+SS
+ISS
+Number of iterations k=42
+4.100000e-01
+1.900000e-01
+
+k43
+
+ISF
+SS
+ISS
+Number of iterations k=43
+4.200000e-01
+2.000000e-01
+
+k44
+
+ISF
+SS
+ISS
+Number of iterations k=44
+4.300000e-01
+2.100000e-01
+
+k45
+
+ISF
+SS
+ISS
+Number of iterations k=45
+4.400000e-01
+2.200000e-01
+
+k46
+
+ISF
+SS
+ISS
+Number of iterations k=46
+4.500000e-01
+2.300000e-01
+
+k47
+
+ISF
+SS
+ISS
+Number of iterations k=47
+4.600000e-01
+2.400000e-01
+
+k48
+
+ISF
+SS
+ISS
+Number of iterations k=48
+4.700000e-01
+2.500000e-01
+
+k49
+
+ISF
+SS
+ISS
+Number of iterations k=49
+4.800000e-01
+2.600000e-01
+
+k50
+
+ISF
+SS
+ISS
+Number of iterations k=50
+4.900000e-01
+2.700000e-01
+
+k51
+
+ISF
+SS
+ISS
+Number of iterations k=51
+5.000000e-01
+2.800000e-01
+
+k52
+
+ISF
+SS
+ISS
+Number of iterations k=52
+5.100000e-01
+2.900000e-01
+
+k53
+
+ISF
+SS
+ISS
+Number of iterations k=53
+5.200000e-01
+3.000000e-01
+
+k54
+
+ISF
+SS
+ISS
+Number of iterations k=54
+5.300000e-01
+3.100000e-01
+
+k55
+
+ISF
+SS
+ISS
+Number of iterations k=55
+5.400000e-01
+3.200000e-01
+
+k56
+
+ISF
+SS
+ISS
+Number of iterations k=56
+5.500000e-01
+3.300000e-01
+
+k57
+
+ISF
+SS
+ISS
+Number of iterations k=57
+5.600000e-01
+3.400000e-01
+
+k58
+
+ISF
+SS
+ISS
+Number of iterations k=58
+5.700000e-01
+3.500000e-01
+
+k59
+
+ISF
+SS
+ISS
+Number of iterations k=59
+5.800000e-01
+3.600000e-01
+
+k60
+
+ISF
+SS
+ISS
+Number of iterations k=60
+5.900000e-01
+3.700000e-01
+
+k61
+
+ISF
+SS
+ISS
+Number of iterations k=61
+6.000000e-01
+3.800000e-01
+
+k62
+
+ISF
+SS
+ISS
+Number of iterations k=62
+6.100000e-01
+3.900000e-01
+
+k63
+
+ISF
+SS
+ISS
+Number of iterations k=63
+6.200000e-01
+4.000000e-01
+
+k64
+
+ISF
+SS
+ISS
+Number of iterations k=64
+6.300000e-01
+4.100000e-01
+
+k65
+
+ISF
+SS
+ISS
+Number of iterations k=65
+6.400000e-01
+4.200000e-01
+
+k66
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=66
+6.500000e-01
+4.300000e-01
+
+k67
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=67
+6.600000e-01
+4.400000e-01
+
+k68
+
+ISF
+SS
+ISS
+Number of iterations k=68
+6.700000e-01
+4.500000e-01
+
+k69
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=69
+6.750000e-01
+4.600000e-01
+
+k70
+
+ISF
+SS
+ISS
+Number of iterations k=70
+6.800000e-01
+4.650000e-01
+
+k71
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=71
+6.850000e-01
+4.750000e-01
+
+k72
+
+ISF
+SS
+ISS
+Number of iterations k=72
+6.950000e-01
+4.850000e-01
+
+k73
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=73
+7.000000e-01
+4.950000e-01
+
+k74
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=74
+7.100000e-01
+5.050000e-01
+
+k75
+
+ISF
+SS
+ISS
+Number of iterations k=75
+7.125000e-01
+5.100000e-01
+
+k76
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=76
+7.175000e-01
+5.200000e-01
+
+k77
+
+ISF
+SS
+ISS
+Number of iterations k=77
+7.225000e-01
+5.250000e-01
+
+k78
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=78
+7.275000e-01
+5.350000e-01
+
+k79
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=79
+7.375000e-01
+5.450000e-01
+
+k80
+
+ISF
+SS
+ISS
+Number of iterations k=80
+7.400000e-01
+5.500000e-01
+
+k81
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=81
+7.450000e-01
+5.600000e-01
+
+k82
+
+ISF
+SS
+ISS
+Number of iterations k=82
+7.500000e-01
+5.650000e-01
+
+k83
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=83
+7.550000e-01
+5.750000e-01
+
+k84
+
+ISF
+SS
+ISS
+Number of iterations k=84
+7.600000e-01
+5.800000e-01
+
+k85
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=85
+7.650000e-01
+5.900000e-01
+
+k86
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=86
+7.700000e-01
+5.950000e-01
+
+k87
+
+ISF
+SS
+ISS
+Number of iterations k=87
+7.725000e-01
+6.000000e-01
+
+k88
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=88
+7.775000e-01
+6.100000e-01
+
+k89
+
+ISF
+SS
+ISS
+Number of iterations k=89
+7.825000e-01
+6.150000e-01
+
+k90
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=90
+7.875000e-01
+6.250000e-01
+
+k91
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=91
+7.925000e-01
+6.300000e-01
+
+k92
+
+ISF
+SS
+ISS
+Number of iterations k=92
+7.950000e-01
+6.350000e-01
+
+k93
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=93
+8.000000e-01
+6.450000e-01
+
+k94
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=94
+8.050000e-01
+6.500000e-01
+
+k95
+
+ISF
+SS
+ISS
+Number of iterations k=95
+8.075000e-01
+6.550000e-01
+
+k96
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=96
+8.125000e-01
+6.650000e-01
+
+k97
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=97
+8.175000e-01
+6.700000e-01
+
+k98
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=98
+8.200000e-01
+6.750000e-01
+
+k99
+
+ISF
+SS
+ISS
+Number of iterations k=99
+8.225000e-01
+6.800000e-01
+
+k100
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=100
+8.275000e-01
+6.900000e-01
+
+k101
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=101
+8.325000e-01
+6.950000e-01
+
+k102
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=102
+8.350000e-01
+7.000000e-01
+
+k103
+
+ISF
+SS
+ISS
+Number of iterations k=103
+8.375000e-01
+7.050000e-01
+
+k104
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=104
+8.425000e-01
+7.150000e-01
+
+k105
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=105
+8.475000e-01
+7.200000e-01
+
+k106
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=106
+8.500000e-01
+7.250000e-01
+
+k107
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=107
+8.525000e-01
+7.300000e-01
+
+k108
+
+ISF
+SS
+ISS
+Number of iterations k=108
+8.550000e-01
+7.350000e-01
+
+k109
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=109
+8.600000e-01
+7.450000e-01
+
+k110
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=110
+8.650000e-01
+7.500000e-01
+
+k111
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=111
+8.675000e-01
+7.550000e-01
+
+k112
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=112
+8.700000e-01
+7.600000e-01
+
+k113
+
+ISF
+SS
+ISS
+Number of iterations k=113
+8.725000e-01
+7.650000e-01
+
+k114
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=114
+8.775000e-01
+7.750000e-01
+
+k115
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=115
+8.825000e-01
+7.800000e-01
+
+k116
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=116
+8.837500e-01
+7.825000e-01
+
+k117
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=117
+8.850000e-01
+7.850000e-01
+
+k118
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=118
+8.875000e-01
+7.900000e-01
+
+k119
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=119
+8.900000e-01
+7.950000e-01
+
+k120
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=120
+8.925000e-01
+8.000000e-01
+
+k121
+
+ISF
+SS
+ISS
+Number of iterations k=121
+8.950000e-01
+8.050000e-01
+
+k122
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=122
+9.000000e-01
+8.150000e-01
+
+k123
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=123
+9.050000e-01
+8.200000e-01
+
+k124
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=124
+9.062500e-01
+8.225000e-01
+
+k125
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=125
+9.075000e-01
+8.250000e-01
+
+k126
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=126
+9.087500e-01
+8.275000e-01
+
+k127
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=127
+9.100000e-01
+8.300000e-01
+
+k128
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=128
+9.125000e-01
+8.350000e-01
+
+k129
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=129
+9.150000e-01
+8.400000e-01
+
+k130
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=130
+9.175000e-01
+8.450000e-01
+
+k131
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=131
+9.200000e-01
+8.500000e-01
+
+k132
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=132
+9.225000e-01
+8.550000e-01
+
+k133
+
+ISF
+SS
+ISS
+Number of iterations k=133
+9.250000e-01
+8.600000e-01
+
+k134
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=134
+9.300000e-01
+8.700000e-01
+
+k135
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=135
+9.350000e-01
+8.750000e-01
+
+k136
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=136
+9.356250e-01
+8.762500e-01
+
+k137
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=137
+9.368750e-01
+8.787500e-01
+
+k138
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=138
+9.381250e-01
+8.812500e-01
+
+k139
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=139
+9.393750e-01
+8.837500e-01
+
+k140
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=140
+9.406250e-01
+8.862500e-01
+
+k141
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=141
+9.418750e-01
+8.887500e-01
+
+k142
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=142
+9.431250e-01
+8.912500e-01
+
+k143
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=143
+9.443750e-01
+8.937500e-01
+
+k144
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=144
+9.456250e-01
+8.962500e-01
+
+k145
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=145
+9.468750e-01
+8.987500e-01
+
+k146
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=146
+9.493750e-01
+9.037500e-01
+
+k147
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=147
+9.518750e-01
+9.087500e-01
+
+k148
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=148
+9.543750e-01
+9.137500e-01
+
+k149
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=149
+9.568750e-01
+9.187500e-01
+
+k150
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=150
+9.593750e-01
+9.237500e-01
+
+k151
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=151
+9.618750e-01
+9.287500e-01
+
+k152
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=152
+9.643750e-01
+9.337500e-01
+
+k153
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=153
+9.668750e-01
+9.387500e-01
+
+k154
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=154
+9.693750e-01
+9.437500e-01
+
+k155
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=155
+9.718750e-01
+9.487500e-01
+
+k156
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=156
+9.743750e-01
+9.537500e-01
+
+k157
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=157
+9.768750e-01
+9.587500e-01
+
+k158
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=158
+9.793750e-01
+9.637500e-01
+
+k159
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=159
+9.818750e-01
+9.687500e-01
+
+k160
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=160
+9.843750e-01
+9.737500e-01
+
+k161
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=161
+9.868750e-01
+9.787500e-01
+
+k162
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=162
+9.893750e-01
+9.837500e-01
+
+k163
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=163
+9.918750e-01
+9.887500e-01
+
+k164
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=164
+9.943750e-01
+9.937500e-01
+
+k165
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=165
+9.968750e-01
+9.987500e-01
+
+k166
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=166
+9.993750e-01
+1.003750e+00
+
+k167
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=167
+1.001875e+00
+1.006250e+00
+
+k168
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=168
+1.003125e+00
+1.007500e+00
+
+k169
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=169
+1.003750e+00
+1.008125e+00
+
+k170
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=170
+1.004062e+00
+1.008437e+00
+
+k171
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=171
+1.004219e+00
+1.008594e+00
+
+k172
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=172
+1.004297e+00
+1.008672e+00
+
+k173
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=173
+1.004316e+00
+1.008633e+00
+
+k174
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=174
+1.004277e+00
+1.008555e+00
+
+k175
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=175
+1.004238e+00
+1.008477e+00
+
+k176
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=176
+1.004219e+00
+1.008437e+00
+
+k177
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=177
+1.004199e+00
+1.008398e+00
+
+k178
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=178
+1.004180e+00
+1.008359e+00
+
+k179
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=179
+1.004160e+00
+1.008320e+00
+
+k180
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=180
+1.004141e+00
+1.008281e+00
+
+k181
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=181
+1.004121e+00
+1.008242e+00
+
+k182
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=182
+1.004102e+00
+1.008203e+00
+
+k183
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=183
+1.004082e+00
+1.008164e+00
+
+k184
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=184
+1.004062e+00
+1.008125e+00
+
+k185
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=185
+1.004043e+00
+1.008086e+00
+
+k186
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=186
+1.004023e+00
+1.008047e+00
+
+k187
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=187
+1.004004e+00
+1.008008e+00
+
+k188
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=188
+1.003984e+00
+1.007969e+00
+
+k189
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=189
+1.003965e+00
+1.007930e+00
+
+k190
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=190
+1.003945e+00
+1.007891e+00
+
+k191
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=191
+1.003926e+00
+1.007852e+00
+
+k192
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=192
+1.003906e+00
+1.007813e+00
+
+k193
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=193
+1.003887e+00
+1.007773e+00
+
+k194
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=194
+1.003867e+00
+1.007734e+00
+
+k195
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=195
+1.003848e+00
+1.007695e+00
+
+k196
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=196
+1.003828e+00
+1.007656e+00
+
+k197
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=197
+1.003809e+00
+1.007617e+00
+
+k198
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=198
+1.003789e+00
+1.007578e+00
+
+k199
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=199
+1.003770e+00
+1.007539e+00
+
+k200
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=200
+1.003750e+00
+1.007500e+00
+
+k201
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=201
+1.003730e+00
+1.007461e+00
+
+k202
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=202
+1.003711e+00
+1.007422e+00
+
+k203
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=203
+1.003691e+00
+1.007383e+00
+
+k204
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=204
+1.003672e+00
+1.007344e+00
+
+k205
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=205
+1.003652e+00
+1.007305e+00
+
+k206
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=206
+1.003633e+00
+1.007266e+00
+
+k207
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=207
+1.003613e+00
+1.007227e+00
+
+k208
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=208
+1.003594e+00
+1.007188e+00
+
+k209
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=209
+1.003574e+00
+1.007148e+00
+
+k210
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=210
+1.003555e+00
+1.007109e+00
+
+k211
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=211
+1.003535e+00
+1.007070e+00
+
+k212
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=212
+1.003516e+00
+1.007031e+00
+
+k213
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=213
+1.003496e+00
+1.006992e+00
+
+k214
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=214
+1.003477e+00
+1.006953e+00
+
+k215
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=215
+1.003457e+00
+1.006914e+00
+
+k216
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=216
+1.003437e+00
+1.006875e+00
+
+k217
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=217
+1.003418e+00
+1.006836e+00
+
+k218
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=218
+1.003398e+00
+1.006797e+00
+
+k219
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=219
+1.003379e+00
+1.006758e+00
+
+k220
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=220
+1.003359e+00
+1.006719e+00
+
+k221
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=221
+1.003340e+00
+1.006680e+00
+
+k222
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=222
+1.003320e+00
+1.006641e+00
+
+k223
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=223
+1.003301e+00
+1.006602e+00
+
+k224
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=224
+1.003281e+00
+1.006563e+00
+
+k225
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=225
+1.003262e+00
+1.006523e+00
+
+k226
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=226
+1.003242e+00
+1.006484e+00
+
+k227
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=227
+1.003223e+00
+1.006445e+00
+
+k228
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=228
+1.003203e+00
+1.006406e+00
+
+k229
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=229
+1.003184e+00
+1.006367e+00
+
+k230
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=230
+1.003164e+00
+1.006328e+00
+
+k231
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=231
+1.003145e+00
+1.006289e+00
+
+k232
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=232
+1.003125e+00
+1.006250e+00
+
+k233
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=233
+1.003105e+00
+1.006211e+00
+
+k234
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=234
+1.003086e+00
+1.006172e+00
+
+k235
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=235
+1.003066e+00
+1.006133e+00
+
+k236
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=236
+1.003047e+00
+1.006094e+00
+
+k237
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=237
+1.003027e+00
+1.006055e+00
+
+k238
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=238
+1.003008e+00
+1.006016e+00
+
+k239
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=239
+1.002988e+00
+1.005977e+00
+
+k240
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=240
+1.002969e+00
+1.005938e+00
+
+k241
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=241
+1.002949e+00
+1.005898e+00
+
+k242
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=242
+1.002930e+00
+1.005859e+00
+
+k243
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=243
+1.002910e+00
+1.005820e+00
+
+k244
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=244
+1.002891e+00
+1.005781e+00
+
+k245
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=245
+1.002871e+00
+1.005742e+00
+
+k246
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=246
+1.002852e+00
+1.005703e+00
+
+k247
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=247
+1.002832e+00
+1.005664e+00
+
+k248
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=248
+1.002812e+00
+1.005625e+00
+
+k249
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=249
+1.002793e+00
+1.005586e+00
+
+k250
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=250
+1.002773e+00
+1.005547e+00
+
+k251
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=251
+1.002754e+00
+1.005508e+00
+
+k252
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=252
+1.002734e+00
+1.005469e+00
+
+k253
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=253
+1.002715e+00
+1.005430e+00
+
+k254
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=254
+1.002695e+00
+1.005391e+00
+
+k255
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=255
+1.002676e+00
+1.005352e+00
+
+k256
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=256
+1.002656e+00
+1.005313e+00
+
+k257
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=257
+1.002637e+00
+1.005273e+00
+
+k258
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=258
+1.002617e+00
+1.005234e+00
+
+k259
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=259
+1.002598e+00
+1.005195e+00
+
+k260
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=260
+1.002578e+00
+1.005156e+00
+
+k261
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=261
+1.002568e+00
+1.005137e+00
+
+k262
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=262
+1.002559e+00
+1.005117e+00
+
+k263
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=263
+1.002549e+00
+1.005098e+00
+
+k264
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=264
+1.002539e+00
+1.005078e+00
+
+k265
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=265
+1.002529e+00
+1.005059e+00
+
+k266
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=266
+1.002520e+00
+1.005039e+00
+
+k267
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=267
+1.002510e+00
+1.005020e+00
+
+k268
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=268
+1.002500e+00
+1.005000e+00
+
+k269
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=269
+1.002490e+00
+1.004980e+00
+
+k270
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=270
+1.002480e+00
+1.004961e+00
+
+k271
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=271
+1.002471e+00
+1.004941e+00
+
+k272
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=272
+1.002461e+00
+1.004922e+00
+
+k273
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=273
+1.002451e+00
+1.004902e+00
+
+k274
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=274
+1.002441e+00
+1.004883e+00
+
+k275
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=275
+1.002432e+00
+1.004863e+00
+
+k276
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=276
+1.002422e+00
+1.004844e+00
+
+k277
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=277
+1.002412e+00
+1.004824e+00
+
+k278
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=278
+1.002402e+00
+1.004805e+00
+
+k279
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=279
+1.002393e+00
+1.004785e+00
+
+k280
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=280
+1.002383e+00
+1.004766e+00
+
+k281
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=281
+1.002373e+00
+1.004746e+00
+
+k282
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=282
+1.002363e+00
+1.004727e+00
+
+k283
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=283
+1.002354e+00
+1.004707e+00
+
+k284
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=284
+1.002344e+00
+1.004688e+00
+
+k285
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=285
+1.002334e+00
+1.004668e+00
+
+k286
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=286
+1.002324e+00
+1.004648e+00
+
+k287
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=287
+1.002314e+00
+1.004629e+00
+
+k288
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=288
+1.002305e+00
+1.004609e+00
+
+k289
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=289
+1.002295e+00
+1.004590e+00
+
+k290
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=290
+1.002285e+00
+1.004570e+00
+
+k291
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=291
+1.002275e+00
+1.004551e+00
+
+k292
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=292
+1.002266e+00
+1.004531e+00
+
+k293
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=293
+1.002256e+00
+1.004512e+00
+
+k294
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=294
+1.002246e+00
+1.004492e+00
+
+k295
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=295
+1.002236e+00
+1.004473e+00
+
+k296
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=296
+1.002227e+00
+1.004453e+00
+
+k297
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=297
+1.002217e+00
+1.004434e+00
+
+k298
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=298
+1.002207e+00
+1.004414e+00
+
+k299
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=299
+1.002197e+00
+1.004395e+00
+
+k300
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=300
+1.002187e+00
+1.004375e+00
+
+k301
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=301
+1.002178e+00
+1.004355e+00
+
+k302
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=302
+1.002168e+00
+1.004336e+00
+
+k303
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=303
+1.002158e+00
+1.004316e+00
+
+k304
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=304
+1.002148e+00
+1.004297e+00
+
+k305
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=305
+1.002139e+00
+1.004277e+00
+
+k306
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=306
+1.002129e+00
+1.004258e+00
+
+k307
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=307
+1.002119e+00
+1.004238e+00
+
+k308
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=308
+1.002109e+00
+1.004219e+00
+
+k309
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=309
+1.002100e+00
+1.004199e+00
+
+k310
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=310
+1.002090e+00
+1.004180e+00
+
+k311
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=311
+1.002080e+00
+1.004160e+00
+
+k312
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=312
+1.002070e+00
+1.004141e+00
+
+k313
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=313
+1.002061e+00
+1.004121e+00
+
+k314
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=314
+1.002051e+00
+1.004102e+00
+
+k315
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=315
+1.002041e+00
+1.004082e+00
+
+k316
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=316
+1.002031e+00
+1.004063e+00
+
+k317
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=317
+1.002021e+00
+1.004043e+00
+
+k318
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=318
+1.002012e+00
+1.004023e+00
+
+k319
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=319
+1.002002e+00
+1.004004e+00
+
+k320
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=320
+1.001992e+00
+1.003984e+00
+
+k321
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=321
+1.001982e+00
+1.003965e+00
+
+k322
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=322
+1.001973e+00
+1.003945e+00
+
+k323
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=323
+1.001963e+00
+1.003926e+00
+
+k324
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=324
+1.001953e+00
+1.003906e+00
+
+k325
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=325
+1.001943e+00
+1.003887e+00
+
+k326
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=326
+1.001934e+00
+1.003867e+00
+
+k327
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=327
+1.001924e+00
+1.003848e+00
+
+k328
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=328
+1.001914e+00
+1.003828e+00
+
+k329
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=329
+1.001904e+00
+1.003809e+00
+
+k330
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=330
+1.001895e+00
+1.003789e+00
+
+k331
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=331
+1.001885e+00
+1.003770e+00
+
+k332
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=332
+1.001875e+00
+1.003750e+00
+
+k333
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=333
+1.001865e+00
+1.003730e+00
+
+k334
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=334
+1.001855e+00
+1.003711e+00
+
+k335
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=335
+1.001846e+00
+1.003691e+00
+
+k336
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=336
+1.001836e+00
+1.003672e+00
+
+k337
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=337
+1.001826e+00
+1.003652e+00
+
+k338
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=338
+1.001816e+00
+1.003633e+00
+
+k339
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=339
+1.001807e+00
+1.003613e+00
+
+k340
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=340
+1.001797e+00
+1.003594e+00
+
+k341
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=341
+1.001787e+00
+1.003574e+00
+
+k342
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=342
+1.001777e+00
+1.003555e+00
+
+k343
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=343
+1.001768e+00
+1.003535e+00
+
+k344
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=344
+1.001758e+00
+1.003516e+00
+
+k345
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=345
+1.001748e+00
+1.003496e+00
+
+k346
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=346
+1.001738e+00
+1.003477e+00
+
+k347
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=347
+1.001729e+00
+1.003457e+00
+
+k348
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=348
+1.001719e+00
+1.003438e+00
+
+k349
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=349
+1.001709e+00
+1.003418e+00
+
+k350
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=350
+1.001699e+00
+1.003398e+00
+
+k351
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=351
+1.001689e+00
+1.003379e+00
+
+k352
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=352
+1.001680e+00
+1.003359e+00
+
+k353
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=353
+1.001670e+00
+1.003340e+00
+
+k354
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=354
+1.001660e+00
+1.003320e+00
+
+k355
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=355
+1.001650e+00
+1.003301e+00
+
+k356
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=356
+1.001641e+00
+1.003281e+00
+
+k357
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=357
+1.001631e+00
+1.003262e+00
+
+k358
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=358
+1.001621e+00
+1.003242e+00
+
+k359
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=359
+1.001611e+00
+1.003223e+00
+
+k360
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=360
+1.001602e+00
+1.003203e+00
+
+k361
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=361
+1.001592e+00
+1.003184e+00
+
+k362
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=362
+1.001582e+00
+1.003164e+00
+
+k363
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=363
+1.001572e+00
+1.003145e+00
+
+k364
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=364
+1.001563e+00
+1.003125e+00
+
+k365
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=365
+1.001553e+00
+1.003105e+00
+
+k366
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=366
+1.001543e+00
+1.003086e+00
+
+k367
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=367
+1.001533e+00
+1.003066e+00
+
+k368
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=368
+1.001523e+00
+1.003047e+00
+
+k369
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=369
+1.001514e+00
+1.003027e+00
+
+k370
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=370
+1.001504e+00
+1.003008e+00
+
+k371
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=371
+1.001499e+00
+1.002988e+00
+
+k372
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=372
+1.001489e+00
+1.002969e+00
+
+k373
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=373
+1.001479e+00
+1.002949e+00
+
+k374
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=374
+1.001470e+00
+1.002930e+00
+
+k375
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=375
+1.001460e+00
+1.002910e+00
+
+k376
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=376
+1.001450e+00
+1.002891e+00
+
+k377
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=377
+1.001440e+00
+1.002871e+00
+
+k378
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=378
+1.001431e+00
+1.002852e+00
+
+k379
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=379
+1.001421e+00
+1.002832e+00
+
+k380
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=380
+1.001411e+00
+1.002813e+00
+
+k381
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=381
+1.001401e+00
+1.002793e+00
+
+k382
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=382
+1.001392e+00
+1.002773e+00
+
+k383
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=383
+1.001382e+00
+1.002754e+00
+
+k384
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=384
+1.001372e+00
+1.002734e+00
+
+k385
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=385
+1.001362e+00
+1.002715e+00
+
+k386
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=386
+1.001353e+00
+1.002695e+00
+
+k387
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=387
+1.001343e+00
+1.002676e+00
+
+k388
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=388
+1.001333e+00
+1.002656e+00
+
+k389
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=389
+1.001323e+00
+1.002637e+00
+
+k390
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=390
+1.001313e+00
+1.002617e+00
+
+k391
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=391
+1.001304e+00
+1.002598e+00
+
+k392
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=392
+1.001294e+00
+1.002578e+00
+
+k393
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=393
+1.001284e+00
+1.002559e+00
+
+k394
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=394
+1.001274e+00
+1.002539e+00
+
+k395
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=395
+1.001265e+00
+1.002520e+00
+
+k396
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=396
+1.001255e+00
+1.002500e+00
+
+k397
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=397
+1.001245e+00
+1.002480e+00
+
+k398
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=398
+1.001235e+00
+1.002461e+00
+
+k399
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=399
+1.001226e+00
+1.002441e+00
+
+k400
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=400
+1.001216e+00
+1.002422e+00
+
+k401
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=401
+1.001206e+00
+1.002402e+00
+
+k402
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=402
+1.001196e+00
+1.002383e+00
+
+k403
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=403
+1.001187e+00
+1.002363e+00
+
+k404
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=404
+1.001177e+00
+1.002344e+00
+
+k405
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=405
+1.001167e+00
+1.002324e+00
+
+k406
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=406
+1.001157e+00
+1.002305e+00
+
+k407
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=407
+1.001147e+00
+1.002285e+00
+
+k408
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=408
+1.001138e+00
+1.002266e+00
+
+k409
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=409
+1.001128e+00
+1.002246e+00
+
+k410
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=410
+1.001118e+00
+1.002227e+00
+
+k411
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=411
+1.001108e+00
+1.002207e+00
+
+k412
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=412
+1.001099e+00
+1.002188e+00
+
+k413
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=413
+1.001089e+00
+1.002168e+00
+
+k414
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=414
+1.001079e+00
+1.002148e+00
+
+k415
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=415
+1.001069e+00
+1.002129e+00
+
+k416
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=416
+1.001060e+00
+1.002109e+00
+
+k417
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=417
+1.001050e+00
+1.002090e+00
+
+k418
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=418
+1.001040e+00
+1.002070e+00
+
+k419
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=419
+1.001030e+00
+1.002051e+00
+
+k420
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=420
+1.001021e+00
+1.002031e+00
+
+k421
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=421
+1.001011e+00
+1.002012e+00
+
+k422
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=422
+1.001001e+00
+1.001992e+00
+
+k423
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=423
+1.000991e+00
+1.001973e+00
+
+k424
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=424
+1.000981e+00
+1.001953e+00
+
+k425
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=425
+1.000972e+00
+1.001934e+00
+
+k426
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=426
+1.000962e+00
+1.001914e+00
+
+k427
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=427
+1.000952e+00
+1.001895e+00
+
+k428
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=428
+1.000942e+00
+1.001875e+00
+
+k429
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=429
+1.000933e+00
+1.001855e+00
+
+k430
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=430
+1.000923e+00
+1.001836e+00
+
+k431
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=431
+1.000913e+00
+1.001816e+00
+
+k432
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=432
+1.000903e+00
+1.001797e+00
+
+k433
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=433
+1.000894e+00
+1.001777e+00
+
+k434
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=434
+1.000884e+00
+1.001758e+00
+
+k435
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=435
+1.000874e+00
+1.001738e+00
+
+k436
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=436
+1.000864e+00
+1.001719e+00
+
+k437
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=437
+1.000854e+00
+1.001699e+00
+
+k438
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=438
+1.000845e+00
+1.001680e+00
+
+k439
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=439
+1.000835e+00
+1.001660e+00
+
+k440
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=440
+1.000825e+00
+1.001641e+00
+
+k441
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=441
+1.000815e+00
+1.001621e+00
+
+k442
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=442
+1.000806e+00
+1.001602e+00
+
+k443
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=443
+1.000796e+00
+1.001582e+00
+
+k444
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=444
+1.000786e+00
+1.001563e+00
+
+k445
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=445
+1.000776e+00
+1.001543e+00
+
+k446
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=446
+1.000767e+00
+1.001523e+00
+
+k447
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=447
+1.000757e+00
+1.001504e+00
+
+k448
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=448
+1.000747e+00
+1.001484e+00
+
+k449
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=449
+1.000737e+00
+1.001465e+00
+
+k450
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=450
+1.000728e+00
+1.001445e+00
+
+k451
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=451
+1.000718e+00
+1.001426e+00
+
+k452
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=452
+1.000708e+00
+1.001406e+00
+
+k453
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=453
+1.000698e+00
+1.001387e+00
+
+k454
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=454
+1.000688e+00
+1.001367e+00
+
+k455
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=455
+1.000679e+00
+1.001348e+00
+
+k456
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=456
+1.000669e+00
+1.001328e+00
+
+k457
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=457
+1.000659e+00
+1.001309e+00
+
+k458
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=458
+1.000649e+00
+1.001289e+00
+
+k459
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=459
+1.000640e+00
+1.001270e+00
+
+k460
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=460
+1.000630e+00
+1.001250e+00
+
+k461
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=461
+1.000620e+00
+1.001230e+00
+
+k462
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=462
+1.000610e+00
+1.001211e+00
+
+k463
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=463
+1.000601e+00
+1.001191e+00
+
+k464
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=464
+1.000591e+00
+1.001172e+00
+
+k465
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=465
+1.000581e+00
+1.001152e+00
+
+k466
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=466
+1.000571e+00
+1.001133e+00
+
+k467
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=467
+1.000562e+00
+1.001113e+00
+
+k468
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=468
+1.000552e+00
+1.001094e+00
+
+k469
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=469
+1.000542e+00
+1.001074e+00
+
+k470
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=470
+1.000532e+00
+1.001055e+00
+
+k471
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=471
+1.000522e+00
+1.001035e+00
+
+k472
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=472
+1.000513e+00
+1.001016e+00
+
+k473
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=473
+1.000503e+00
+1.000996e+00
+
+k474
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=474
+1.000493e+00
+1.000977e+00
+
+k475
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=475
+1.000483e+00
+1.000957e+00
+
+k476
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=476
+1.000474e+00
+1.000938e+00
+
+k477
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=477
+1.000464e+00
+1.000918e+00
+
+k478
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=478
+1.000454e+00
+1.000898e+00
+
+k479
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=479
+1.000444e+00
+1.000879e+00
+
+k480
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=480
+1.000435e+00
+1.000859e+00
+
+k481
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=481
+1.000425e+00
+1.000840e+00
+
+k482
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=482
+1.000415e+00
+1.000820e+00
+
+k483
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=483
+1.000405e+00
+1.000801e+00
+
+k484
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=484
+1.000396e+00
+1.000781e+00
+
+k485
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=485
+1.000386e+00
+1.000762e+00
+
+k486
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=486
+1.000376e+00
+1.000742e+00
+
+k487
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=487
+1.000366e+00
+1.000723e+00
+
+k488
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=488
+1.000356e+00
+1.000703e+00
+
+k489
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=489
+1.000347e+00
+1.000684e+00
+
+k490
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=490
+1.000337e+00
+1.000664e+00
+
+k491
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=491
+1.000327e+00
+1.000645e+00
+
+k492
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=492
+1.000317e+00
+1.000625e+00
+
+k493
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=493
+1.000308e+00
+1.000605e+00
+
+k494
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=494
+1.000298e+00
+1.000586e+00
+
+k495
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=495
+1.000288e+00
+1.000566e+00
+
+k496
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=496
+1.000278e+00
+1.000547e+00
+
+k497
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=497
+1.000269e+00
+1.000527e+00
+
+k498
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=498
+1.000259e+00
+1.000508e+00
+
+k499
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=499
+1.000249e+00
+1.000488e+00
+
+k500
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=500
+1.000239e+00
+1.000469e+00
+
+k501
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=501
+1.000229e+00
+1.000449e+00
+
+k502
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=502
+1.000220e+00
+1.000430e+00
+
+k503
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=503
+1.000210e+00
+1.000410e+00
+
+k504
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=504
+1.000200e+00
+1.000391e+00
+
+k505
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=505
+1.000190e+00
+1.000371e+00
+
+k506
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=506
+1.000181e+00
+1.000352e+00
+
+k507
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=507
+1.000171e+00
+1.000332e+00
+
+k508
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=508
+1.000161e+00
+1.000313e+00
+
+k509
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=509
+1.000151e+00
+1.000293e+00
+
+k510
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=510
+1.000142e+00
+1.000273e+00
+
+k511
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=511
+1.000132e+00
+1.000254e+00
+
+k512
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=512
+1.000122e+00
+1.000234e+00
+
+k513
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=513
+1.000112e+00
+1.000215e+00
+
+k514
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=514
+1.000103e+00
+1.000195e+00
+
+k515
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=515
+1.000093e+00
+1.000176e+00
+
+k516
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=516
+1.000083e+00
+1.000156e+00
+
+k517
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=517
+1.000073e+00
+1.000137e+00
+
+k518
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=518
+1.000063e+00
+1.000117e+00
+
+k519
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=519
+1.000054e+00
+1.000098e+00
+
+k520
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=520
+1.000044e+00
+1.000078e+00
+
+k521
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=521
+1.000034e+00
+1.000059e+00
+
+k522
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=522
+1.000024e+00
+1.000039e+00
+
+k523
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=523
+1.000015e+00
+1.000020e+00
+
+k524
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=524
+1.000005e+00
+1.000000e+00
+
+k525
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=525
+9.999951e-01
+9.999805e-01
+
+k526
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=526
+9.999902e-01
+9.999854e-01
+
+k527
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=527
+9.999951e-01
+9.999951e-01
+
+k528
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=528
+1.000000e+00
+1.000005e+00
+
+k529
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=529
+1.000002e+00
+1.000007e+00
+
+k530
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=530
+1.000004e+00
+1.000009e+00
+
+k531
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=531
+1.000004e+00
+1.000009e+00
+
+k532
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=532
+1.000005e+00
+1.000009e+00
+
+k533
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=533
+1.000005e+00
+1.000010e+00
+
+k534
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=534
+1.000005e+00
+1.000010e+00
+
+k535
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=535
+1.000005e+00
+1.000010e+00
+
+k536
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=536
+1.000005e+00
+1.000010e+00
+
+k537
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=537
+1.000005e+00
+1.000010e+00
+
+k538
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=538
+1.000005e+00
+1.000010e+00
+
+k539
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=539
+1.000005e+00
+1.000009e+00
+
+k540
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=540
+1.000005e+00
+1.000009e+00
+
+k541
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=541
+1.000005e+00
+1.000009e+00
+
+k542
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=542
+1.000005e+00
+1.000009e+00
+
+k543
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=543
+1.000005e+00
+1.000009e+00
+
+k544
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=544
+1.000005e+00
+1.000009e+00
+
+k545
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=545
+1.000005e+00
+1.000009e+00
+
+k546
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=546
+1.000004e+00
+1.000009e+00
+
+k547
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=547
+1.000004e+00
+1.000009e+00
+
+k548
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=548
+1.000004e+00
+1.000009e+00
+
+k549
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=549
+1.000004e+00
+1.000009e+00
+
+k550
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=550
+1.000004e+00
+1.000009e+00
+
+k551
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=551
+1.000004e+00
+1.000009e+00
+
+k552
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=552
+1.000004e+00
+1.000008e+00
+
+k553
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=553
+1.000004e+00
+1.000008e+00
+
+k554
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=554
+1.000004e+00
+1.000008e+00
+
+k555
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=555
+1.000004e+00
+1.000008e+00
+
+k556
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=556
+1.000004e+00
+1.000008e+00
+
+k557
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=557
+1.000004e+00
+1.000008e+00
+
+k558
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=558
+1.000004e+00
+1.000008e+00
+
+k559
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=559
+1.000004e+00
+1.000008e+00
+
+k560
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=560
+1.000004e+00
+1.000008e+00
+
+k561
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=561
+1.000004e+00
+1.000008e+00
+
+k562
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=562
+1.000004e+00
+1.000008e+00
+
+k563
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=563
+1.000004e+00
+1.000008e+00
+
+k564
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=564
+1.000004e+00
+1.000008e+00
+
+k565
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=565
+1.000004e+00
+1.000008e+00
+
+k566
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=566
+1.000004e+00
+1.000008e+00
+
+k567
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=567
+1.000004e+00
+1.000007e+00
+
+k568
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=568
+1.000004e+00
+1.000007e+00
+
+k569
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=569
+1.000004e+00
+1.000007e+00
+
+k570
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=570
+1.000004e+00
+1.000007e+00
+
+k571
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=571
+1.000004e+00
+1.000007e+00
+
+k572
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=572
+1.000004e+00
+1.000007e+00
+
+k573
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=573
+1.000004e+00
+1.000007e+00
+
+k574
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=574
+1.000004e+00
+1.000007e+00
+
+k575
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=575
+1.000004e+00
+1.000007e+00
+
+k576
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=576
+1.000004e+00
+1.000007e+00
+
+k577
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=577
+1.000004e+00
+1.000007e+00
+
+k578
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=578
+1.000004e+00
+1.000007e+00
+
+k579
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=579
+1.000004e+00
+1.000007e+00
+
+k580
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=580
+1.000003e+00
+1.000007e+00
+
+k581
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=581
+1.000003e+00
+1.000007e+00
+
+k582
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=582
+1.000003e+00
+1.000007e+00
+
+k583
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=583
+1.000003e+00
+1.000007e+00
+
+k584
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=584
+1.000003e+00
+1.000007e+00
+
+k585
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=585
+1.000003e+00
+1.000007e+00
+
+k586
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=586
+1.000003e+00
+1.000007e+00
+
+k587
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=587
+1.000003e+00
+1.000007e+00
+
+k588
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=588
+1.000003e+00
+1.000007e+00
+
+k589
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=589
+1.000003e+00
+1.000007e+00
+
+k590
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=590
+1.000003e+00
+1.000007e+00
+
+k591
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=591
+1.000003e+00
+1.000007e+00
+
+k592
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=592
+1.000003e+00
+1.000007e+00
+
+k593
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=593
+1.000003e+00
+1.000006e+00
+
+k594
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=594
+1.000003e+00
+1.000006e+00
+
+k595
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=595
+1.000003e+00
+1.000006e+00
+
+k596
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=596
+1.000003e+00
+1.000006e+00
+
+k597
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=597
+1.000003e+00
+1.000006e+00
+
+k598
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=598
+1.000003e+00
+1.000006e+00
+
+k599
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=599
+1.000003e+00
+1.000006e+00
+
+k600
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=600
+1.000003e+00
+1.000006e+00
+
+k601
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=601
+1.000003e+00
+1.000006e+00
+
+k602
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=602
+1.000003e+00
+1.000006e+00
+
+k603
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=603
+1.000003e+00
+1.000006e+00
+
+k604
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=604
+1.000003e+00
+1.000006e+00
+
+k605
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=605
+1.000003e+00
+1.000006e+00
+
+k606
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=606
+1.000003e+00
+1.000006e+00
+
+k607
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=607
+1.000003e+00
+1.000006e+00
+
+k608
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=608
+1.000003e+00
+1.000006e+00
+
+k609
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=609
+1.000003e+00
+1.000006e+00
+
+k610
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=610
+1.000003e+00
+1.000006e+00
+
+k611
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=611
+1.000003e+00
+1.000006e+00
+
+k612
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=612
+1.000003e+00
+1.000006e+00
+
+k613
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=613
+1.000003e+00
+1.000006e+00
+
+k614
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=614
+1.000003e+00
+1.000006e+00
+
+k615
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=615
+1.000003e+00
+1.000006e+00
+
+k616
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=616
+1.000003e+00
+1.000006e+00
+
+k617
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=617
+1.000003e+00
+1.000006e+00
+
+k618
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=618
+1.000003e+00
+1.000006e+00
+
+k619
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=619
+1.000003e+00
+1.000005e+00
+
+k620
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=620
+1.000003e+00
+1.000005e+00
+
+k621
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=621
+1.000003e+00
+1.000005e+00
+
+k622
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=622
+1.000003e+00
+1.000005e+00
+
+k623
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=623
+1.000003e+00
+1.000005e+00
+
+k624
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=624
+1.000003e+00
+1.000005e+00
+
+k625
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=625
+1.000003e+00
+1.000005e+00
+
+k626
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=626
+1.000003e+00
+1.000005e+00
+
+k627
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=627
+1.000003e+00
+1.000005e+00
+
+k628
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=628
+1.000003e+00
+1.000005e+00
+
+k629
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=629
+1.000003e+00
+1.000005e+00
+
+k630
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=630
+1.000003e+00
+1.000005e+00
+
+k631
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=631
+1.000003e+00
+1.000005e+00
+
+k632
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=632
+1.000003e+00
+1.000005e+00
+
+k633
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=633
+1.000002e+00
+1.000005e+00
+
+k634
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=634
+1.000002e+00
+1.000005e+00
+
+k635
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=635
+1.000002e+00
+1.000005e+00
+
+k636
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=636
+1.000002e+00
+1.000005e+00
+
+k637
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=637
+1.000002e+00
+1.000005e+00
+
+k638
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=638
+1.000002e+00
+1.000005e+00
+
+k639
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=639
+1.000002e+00
+1.000005e+00
+
+k640
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=640
+1.000002e+00
+1.000005e+00
+
+k641
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=641
+1.000002e+00
+1.000005e+00
+
+k642
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=642
+1.000002e+00
+1.000005e+00
+
+k643
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=643
+1.000002e+00
+1.000005e+00
+
+k644
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=644
+1.000002e+00
+1.000005e+00
+
+k645
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=645
+1.000002e+00
+1.000005e+00
+
+k646
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=646
+1.000002e+00
+1.000004e+00
+
+k647
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=647
+1.000002e+00
+1.000004e+00
+
+k648
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=648
+1.000002e+00
+1.000004e+00
+
+k649
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=649
+1.000002e+00
+1.000004e+00
+
+k650
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=650
+1.000002e+00
+1.000004e+00
+
+k651
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=651
+1.000002e+00
+1.000004e+00
+
+k652
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=652
+1.000002e+00
+1.000004e+00
+
+k653
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=653
+1.000002e+00
+1.000004e+00
+
+k654
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=654
+1.000002e+00
+1.000004e+00
+
+k655
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=655
+1.000002e+00
+1.000004e+00
+
+k656
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=656
+1.000002e+00
+1.000004e+00
+
+k657
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=657
+1.000002e+00
+1.000004e+00
+
+k658
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=658
+1.000002e+00
+1.000004e+00
+
+k659
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=659
+1.000002e+00
+1.000004e+00
+
+k660
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=660
+1.000002e+00
+1.000004e+00
+
+k661
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=661
+1.000002e+00
+1.000004e+00
+
+k662
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=662
+1.000002e+00
+1.000004e+00
+
+k663
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=663
+1.000002e+00
+1.000004e+00
+
+k664
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=664
+1.000002e+00
+1.000004e+00
+
+k665
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=665
+1.000002e+00
+1.000004e+00
+
+k666
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=666
+1.000002e+00
+1.000004e+00
+
+k667
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=667
+1.000002e+00
+1.000004e+00
+
+k668
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=668
+1.000002e+00
+1.000004e+00
+
+k669
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=669
+1.000002e+00
+1.000004e+00
+
+k670
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=670
+1.000002e+00
+1.000004e+00
+
+k671
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=671
+1.000002e+00
+1.000004e+00
+
+k672
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=672
+1.000002e+00
+1.000003e+00
+
+k673
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=673
+1.000002e+00
+1.000003e+00
+
+k674
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=674
+1.000002e+00
+1.000003e+00
+
+k675
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=675
+1.000002e+00
+1.000003e+00
+
+k676
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=676
+1.000002e+00
+1.000003e+00
+
+k677
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=677
+1.000002e+00
+1.000003e+00
+
+k678
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=678
+1.000002e+00
+1.000003e+00
+
+k679
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=679
+1.000002e+00
+1.000003e+00
+
+k680
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=680
+1.000002e+00
+1.000003e+00
+
+k681
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=681
+1.000002e+00
+1.000003e+00
+
+k682
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=682
+1.000002e+00
+1.000003e+00
+
+k683
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=683
+1.000002e+00
+1.000003e+00
+
+k684
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=684
+1.000002e+00
+1.000003e+00
+
+k685
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=685
+1.000001e+00
+1.000003e+00
+
+k686
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=686
+1.000001e+00
+1.000003e+00
+
+k687
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=687
+1.000001e+00
+1.000003e+00
+
+k688
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=688
+1.000001e+00
+1.000003e+00
+
+k689
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=689
+1.000001e+00
+1.000003e+00
+
+k690
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=690
+1.000001e+00
+1.000003e+00
+
+k691
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=691
+1.000001e+00
+1.000003e+00
+
+k692
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=692
+1.000001e+00
+1.000003e+00
+
+k693
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=693
+1.000001e+00
+1.000003e+00
+
+k694
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=694
+1.000001e+00
+1.000003e+00
+
+k695
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=695
+1.000001e+00
+1.000003e+00
+
+k696
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=696
+1.000001e+00
+1.000003e+00
+
+k697
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=697
+1.000001e+00
+1.000003e+00
+
+k698
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=698
+1.000001e+00
+1.000002e+00
+
+k699
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=699
+1.000001e+00
+1.000002e+00
+
+k700
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=700
+1.000001e+00
+1.000002e+00
+
+k701
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=701
+1.000001e+00
+1.000002e+00
+
+k702
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=702
+1.000001e+00
+1.000002e+00
+
+k703
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=703
+1.000001e+00
+1.000002e+00
+
+k704
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=704
+1.000001e+00
+1.000002e+00
+
+k705
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=705
+1.000001e+00
+1.000002e+00
+
+k706
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=706
+1.000001e+00
+1.000002e+00
+
+k707
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=707
+1.000001e+00
+1.000002e+00
+
+k708
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=708
+1.000001e+00
+1.000002e+00
+
+k709
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=709
+1.000001e+00
+1.000002e+00
+
+k710
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=710
+1.000001e+00
+1.000002e+00
+
+k711
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=711
+1.000001e+00
+1.000002e+00
+
+k712
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=712
+1.000001e+00
+1.000002e+00
+
+k713
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=713
+1.000001e+00
+1.000002e+00
+
+k714
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=714
+1.000001e+00
+1.000002e+00
+
+k715
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=715
+1.000001e+00
+1.000002e+00
+
+k716
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=716
+1.000001e+00
+1.000002e+00
+
+k717
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=717
+1.000001e+00
+1.000002e+00
+
+k718
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=718
+1.000001e+00
+1.000002e+00
+
+k719
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=719
+1.000001e+00
+1.000002e+00
+
+k720
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=720
+1.000001e+00
+1.000002e+00
+
+k721
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=721
+1.000001e+00
+1.000002e+00
+
+k722
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=722
+1.000001e+00
+1.000002e+00
+
+k723
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=723
+1.000001e+00
+1.000002e+00
+
+k724
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=724
+1.000001e+00
+1.000001e+00
+
+k725
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=725
+1.000001e+00
+1.000001e+00
+
+k726
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=726
+1.000001e+00
+1.000001e+00
+
+k727
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=727
+1.000001e+00
+1.000001e+00
+
+k728
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=728
+1.000001e+00
+1.000001e+00
+
+k729
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=729
+1.000001e+00
+1.000001e+00
+
+k730
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=730
+1.000001e+00
+1.000001e+00
+
+k731
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=731
+1.000001e+00
+1.000001e+00
+
+k732
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=732
+1.000001e+00
+1.000001e+00
+
+k733
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=733
+1.000001e+00
+1.000001e+00
+
+k734
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=734
+1.000001e+00
+1.000001e+00
+
+k735
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=735
+1.000001e+00
+1.000001e+00
+
+k736
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=736
+1.000001e+00
+1.000001e+00
+
+k737
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=737
+1.000001e+00
+1.000001e+00
+
+k738
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=738
+1.000000e+00
+1.000001e+00
+
+k739
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=739
+1.000000e+00
+1.000001e+00
+
+k740
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=740
+1.000000e+00
+1.000001e+00
+
+k741
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=741
+1.000000e+00
+1.000001e+00
+
+k742
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=742
+1.000000e+00
+1.000001e+00
+
+k743
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=743
+1.000000e+00
+1.000001e+00
+
+k744
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=744
+1.000000e+00
+1.000001e+00
+
+k745
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=745
+1.000000e+00
+1.000001e+00
+
+k746
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=746
+1.000000e+00
+1.000001e+00
+
+k747
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=747
+1.000000e+00
+1.000001e+00
+
+k748
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=748
+1.000000e+00
+1.000001e+00
+
+k749
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=749
+1.000000e+00
+1.000001e+00
+
+k750
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=750
+1.000000e+00
+1.000000e+00
+
+k751
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=751
+1.000000e+00
+1.000000e+00
+
+k752
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=752
+1.000000e+00
+1.000000e+00
+
+k753
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=753
+1.000000e+00
+1.000000e+00
+
+k754
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=754
+1.000000e+00
+1.000000e+00
+
+k755
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=755
+1.000000e+00
+1.000000e+00
+
+k756
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=756
+1.000000e+00
+1.000000e+00
+
+k757
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=757
+1.000000e+00
+1.000000e+00
+
+k758
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=758
+1.000000e+00
+1.000000e+00
+
+k759
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=759
+1.000000e+00
+1.000000e+00
+
+k760
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=760
+1.000000e+00
+1.000000e+00
+
+k761
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=761
+1.000000e+00
+1.000000e+00
+
+k762
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=762
+1.000000e+00
+1.000000e+00
+
+k763
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=763
+1.000000e+00
+1.000000e+00
+
+k764
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=764
+1.000000e+00
+1.000000e+00
+
+k765
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=765
+1.000000e+00
+1.000000e+00
+
+k766
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=766
+1.000000e+00
+1.000000e+00
+
+k767
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=767
+1.000000e+00
+1.000000e+00
+
+k768
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=768
+1.000000e+00
+1.000000e+00
+
+k769
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=769
+1.000000e+00
+1.000000e+00
+
+k770
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=770
+1.000000e+00
+1.000000e+00
+
+k771
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=771
+1.000000e+00
+1.000000e+00
+
+k772
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=772
+1.000000e+00
+1.000000e+00
+
+k773
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=773
+1.000000e+00
+1.000000e+00
+
+k774
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=774
+1.000000e+00
+1.000000e+00
+
+k775
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=775
+1.000000e+00
+1.000000e+00
+
+k776
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=776
+1.000000e+00
+1.000000e+00
+
+k777
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=777
+1.000000e+00
+1.000000e+00
+
+k778
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=778
+1.000000e+00
+1.000000e+00
+
+k779
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=779
+1.000000e+00
+1.000000e+00
+
+k780
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=780
+1.000000e+00
+1.000000e+00
+
+k781
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=781
+1.000000e+00
+1.000000e+00
+
+k782
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=782
+1.000000e+00
+1.000000e+00
+
+k783
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=783
+1.000000e+00
+1.000000e+00
+
+k784
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=784
+1.000000e+00
+1.000000e+00
+
+k785
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=785
+1.000000e+00
+1.000000e+00
+
+k786
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=786
+1.000000e+00
+1.000000e+00
+
+k787
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=787
+1.000000e+00
+1.000000e+00
+
+k788
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=788
+1.000000e+00
+1.000000e+00
+
+k789
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=789
+1.000000e+00
+1.000000e+00
+
+k790
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=790
+1.000000e+00
+1.000000e+00
+
+k791
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=791
+1.000000e+00
+1.000000e+00
+
+k792
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=792
+1.000000e+00
+1.000000e+00
+
+k793
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=793
+1.000000e+00
+1.000000e+00
+
+k794
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=794
+1.000000e+00
+1.000000e+00
+
+k795
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=795
+1.000000e+00
+1.000000e+00
+
+k796
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=796
+1.000000e+00
+1.000000e+00
+
+k797
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=797
+1.000000e+00
+1.000000e+00
+
+k798
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=798
+1.000000e+00
+1.000000e+00
+
+k799
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=799
+1.000000e+00
+1.000000e+00
+
+k800
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=800
+1.000000e+00
+1.000000e+00
+
+k801
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=801
+1.000000e+00
+1.000000e+00
+
+k802
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=802
+1.000000e+00
+1.000000e+00
+
+k803
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=803
+1.000000e+00
+1.000000e+00
+
+k804
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=804
+1.000000e+00
+1.000000e+00
+
+k805
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=805
+1.000000e+00
+1.000000e+00
+
+k806
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=806
+1.000000e+00
+1.000000e+00
+
+k807
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=807
+1.000000e+00
+1.000000e+00
+
+k808
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=808
+1.000000e+00
+1.000000e+00
+
+k809
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=809
+1.000000e+00
+1.000000e+00
+
+k810
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=810
+1.000000e+00
+1.000000e+00
+
+k811
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=811
+1.000000e+00
+1.000000e+00
+
+k812
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=812
+1.000000e+00
+1.000000e+00
+
+k813
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=813
+1.000000e+00
+1.000000e+00
+
+k814
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=814
+1.000000e+00
+1.000000e+00
+
+k815
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=815
+1.000000e+00
+1.000000e+00
+
+k816
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=816
+1.000000e+00
+1.000000e+00
+
+k817
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=817
+1.000000e+00
+1.000000e+00
+
+k818
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=818
+1.000000e+00
+1.000000e+00
+
+k819
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=819
+1.000000e+00
+1.000000e+00
+
+k820
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=820
+1.000000e+00
+1.000000e+00
+
+k821
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=821
+1.000000e+00
+1.000000e+00
+
+k822
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=822
+1.000000e+00
+1.000000e+00
+
+k823
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=823
+1.000000e+00
+1.000000e+00
+
+k824
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=824
+1.000000e+00
+1.000000e+00
+
+k825
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=825
+1.000000e+00
+1.000000e+00
+
+k826
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=826
+1.000000e+00
+1.000000e+00
+
+k827
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=827
+1.000000e+00
+1.000000e+00
+
+k828
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=828
+1.000000e+00
+1.000000e+00
+
+k829
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=829
+1.000000e+00
+1.000000e+00
+
+k830
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=830
+1.000000e+00
+1.000000e+00
+
+k831
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=831
+1.000000e+00
+1.000000e+00
+
+k832
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=832
+1.000000e+00
+1.000000e+00
+
+k833
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=833
+1.000000e+00
+1.000000e+00
+
+k834
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=834
+1.000000e+00
+1.000000e+00
+
+k835
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=835
+1.000000e+00
+1.000000e+00
+
+k836
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=836
+1.000000e+00
+1.000000e+00
+
+k837
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=837
+1.000000e+00
+1.000000e+00
+
+k838
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=838
+1.000000e+00
+1.000000e+00
+
+k839
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=839
+1.000000e+00
+1.000000e+00
+
+k840
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=840
+1.000000e+00
+1.000000e+00
+
+k841
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=841
+1.000000e+00
+1.000000e+00
+
+k842
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=842
+1.000000e+00
+1.000000e+00
+
+k843
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=843
+1.000000e+00
+1.000000e+00
+
+k844
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=844
+1.000000e+00
+1.000000e+00
+
+k845
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=845
+1.000000e+00
+1.000000e+00
+
+k846
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=846
+1.000000e+00
+1.000000e+00
+
+k847
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=847
+1.000000e+00
+1.000000e+00
+
+k848
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=848
+1.000000e+00
+1.000000e+00
+
+k849
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=849
+1.000000e+00
+1.000000e+00
+
+k850
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=850
+1.000000e+00
+1.000000e+00
+
+k851
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=851
+1.000000e+00
+1.000000e+00
+
+k852
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=852
+1.000000e+00
+1.000000e+00
+
+k853
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=853
+1.000000e+00
+1.000000e+00
+
+k854
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=854
+1.000000e+00
+1.000000e+00
+
+k855
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=855
+1.000000e+00
+1.000000e+00
+
+k856
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=856
+1.000000e+00
+1.000000e+00
+
+k857
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=857
+1.000000e+00
+1.000000e+00
+
+k858
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=858
+1.000000e+00
+1.000000e+00
+
+k859
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=859
+1.000000e+00
+1.000000e+00
+
+k860
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=860
+1.000000e+00
+1.000000e+00
+
+k861
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=861
+1.000000e+00
+1.000000e+00
+
+k862
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=862
+1.000000e+00
+1.000000e+00
+
+k863
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=863
+1.000000e+00
+1.000000e+00
+
+k864
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=864
+1.000000e+00
+1.000000e+00
+
+k865
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=865
+1.000000e+00
+1.000000e+00
+
+k866
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=866
+1.000000e+00
+1.000000e+00
+
+k867
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=867
+1.000000e+00
+1.000000e+00
+
+k868
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=868
+1.000000e+00
+1.000000e+00
+
+k869
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=869
+1.000000e+00
+1.000000e+00
+
+k870
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=870
+1.000000e+00
+1.000000e+00
+
+k871
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=871
+1.000000e+00
+1.000000e+00
+
+k872
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=872
+1.000000e+00
+1.000000e+00
+
+k873
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=873
+1.000000e+00
+1.000000e+00
+
+k874
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=874
+1.000000e+00
+1.000000e+00
+
+k875
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=875
+1.000000e+00
+1.000000e+00
+
+k876
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=876
+1.000000e+00
+1.000000e+00
+
+k877
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=877
+1.000000e+00
+1.000000e+00
+
+k878
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=878
+1.000000e+00
+1.000000e+00
+
+k879
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=879
+1.000000e+00
+1.000000e+00
+
+k880
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=880
+1.000000e+00
+1.000000e+00
+
+k881
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=881
+1.000000e+00
+1.000000e+00
+
+k882
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=882
+1.000000e+00
+1.000000e+00
+
+k883
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=883
+1.000000e+00
+1.000000e+00
+
+k884
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=884
+1.000000e+00
+1.000000e+00
+
+k885
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=885
+1.000000e+00
+1.000000e+00
+
+k886
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=886
+1.000000e+00
+1.000000e+00
+
+k887
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=887
+1.000000e+00
+1.000000e+00
+
+k888
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=888
+1.000000e+00
+1.000000e+00
+
+k889
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=889
+1.000000e+00
+1.000000e+00
+
+k890
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=890
+1.000000e+00
+1.000000e+00
+
+k891
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=891
+1.000000e+00
+1.000000e+00
+
+k892
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=892
+1.000000e+00
+1.000000e+00
+
+k893
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=893
+1.000000e+00
+1.000000e+00
+
+k894
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=894
+1.000000e+00
+1.000000e+00
+
+k895
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=895
+1.000000e+00
+1.000000e+00
+
+k896
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=896
+1.000000e+00
+1.000000e+00
+
+k897
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=897
+1.000000e+00
+1.000000e+00
+
+k898
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=898
+1.000000e+00
+1.000000e+00
+
+k899
+
+ISF
+SS
+ISS
+D2
+Number of iterations k=899
+1.000000e+00
+1.000000e+00
+
+k900
+
+ISF
+D1
