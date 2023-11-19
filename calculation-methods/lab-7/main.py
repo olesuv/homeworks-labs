@@ -1,5 +1,4 @@
 import random
-import math
 
 
 def generate_matrix_A():
