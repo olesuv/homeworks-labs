@@ -1,63 +1,59 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Задане бінарне нечітке відношення Q (приклад)
-Q = np.array([[1, 0.7, 0.3],
-              [0.7, 1, 0.5],
-              [0.3, 0.5, 1]])
+
+# def transitive_closure(M):
+#     n = len(M)
+#     W = np.copy(M)
+
+#     for k in range(n):
+#         for i in range(n):
+#             for j in range(n):
+#                 W[i][j] = W[i][j] or (W[i][k] and W[k][j])
+
+#     return W
 
 def transitive_closure(Q):
-    n = Q.shape[0]
-    result = np.copy(Q)
+    n = len(Q)
+    R = np.zeros((n, n), dtype=int)
+
+    for i in range(n):
+        for j in range(n):
+            if Q[i][j] >= 0.6: # Поріг
+                R[i][j] = 1
+
     for k in range(n):
         for i in range(n):
             for j in range(n):
-                result[i, j] = max(result[i, j], min(result[i, k], result[k, j]))
-    return result
+                R[i][j] = R[i][j] or (R[i][k] and R[k][j])
 
-# Знаходимо транзитивне замикання
-transitive_Q = transitive_closure(Q)
-
-print("Транзитивне замикання:")
-print(transitive_Q)
-
-# Побудова графіку для заданого бінарного нечіткого відношення Q
-plt.figure(figsize=(8, 6))
-plt.imshow(Q, cmap='Blues', interpolation='none')
-plt.colorbar()
-plt.title("Бінарне нечітке відношення Q")
-plt.show()
-
-# Побудова графіку для транзитивного замикання
-plt.figure(figsize=(8, 6))
-plt.imshow(transitive_Q, cmap='Blues', interpolation='none')
-plt.colorbar()
-plt.title("Транзитивне замикання")
-plt.show()
+    return R
 
 
 people = ["Анна", "Борис", "Віктор", "Галина"]
-Q_other = np.array([[1, 0.6, 0.2, 0.8],
-                   [0.6, 1, 0.4, 0.7],
-                   [0.2, 0.4, 1, 0.5],
-                   [0.8, 0.7, 0.5, 1]])
 
-# Бінарне транзитивне замикання для людей
-transitive_Q_other = transitive_closure(Q_other)
+Q = np.array([[1, 0.3, 0.2, 0.8],
+              [0.3, 1, 0.4, 0.6],
+              [0.2, 0.4, 1, 0.5],
+              [0.8, 0.6, 0.5, 1]])
 
-print("Транзитивне замикання для іншої сукупності:")
-print(transitive_Q_other)
+ts_q = transitive_closure(Q)
 
-# Побудова графіку для бінарного нечіткого відношення Q_other
+print(f"{Q} \n\n {ts_q}")
+
 plt.figure(figsize=(8, 6))
-plt.imshow(Q_other, cmap='Blues', interpolation='none')
+plt.imshow(Q, cmap='Blues', interpolation='none')
+plt.xticks(np.arange(len(people)), people, rotation=45)
+plt.yticks(np.arange(len(people)), people)
+plt.title("На скільки добре знайомі люди (0-1)")
 plt.colorbar()
-plt.title("Бінарне нечітке відношення Q_other")
 plt.show()
 
-# Побудова графіку для транзитивного замикання для іншої сукупності
+
 plt.figure(figsize=(8, 6))
-plt.imshow(transitive_Q_other, cmap='Blues', interpolation='none')
+plt.imshow(ts_q, cmap='Blues', interpolation='none')
+plt.xticks(np.arange(len(people)), people, rotation=45)
+plt.yticks(np.arange(len(people)), people)
+plt.title("Транзитивне замикання для людей")
 plt.colorbar()
-plt.title("Транзитивне замикання для іншої сукупності")
 plt.show()
