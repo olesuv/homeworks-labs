@@ -14,18 +14,14 @@ import matplotlib.pyplot as plt
 #     return W
 
 def transitive_closure(Q):
-    n = len(Q)
-    R = np.zeros((n, n), dtype=int)
+    n = Q.shape[0]
 
-    for i in range(n):
-        for j in range(n):
-            if Q[i][j] >= 0.6: # Поріг
-                R[i][j] = 1
+    R = Q.copy()
 
     for k in range(n):
         for i in range(n):
             for j in range(n):
-                R[i][j] = R[i][j] or (R[i][k] and R[k][j])
+                R[i, j] = max(R[i, j], min(R[i, k], R[k, j]))
 
     return R
 
