@@ -1,8 +1,0 @@
-
-Method Newton_Gornera
-Solution = 0.6058295862
-With iteration 9
-
-Method Lina
-Solution = 0.0720852069 0.6383267351
-With iteration 212
