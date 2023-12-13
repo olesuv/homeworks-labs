@@ -1,4 +1,6 @@
 import math
+import numpy as np
+import matplotlib.pyplot as plt
 
 def step(xx, nn):
     if nn == 0:
@@ -66,7 +68,6 @@ def Sample_Search(X0, X1, X2p, p, n):
     return 0
 
 def main():
-    # Open output file
     output = open("output.txt", "w")
     
     i = 0
@@ -141,7 +142,6 @@ def main():
         for i in range(n + 1):
             output.write(f"{X0[i]:e}\n")
 
-    # Close output file
     output.close()
 
 def generate_data():
@@ -159,6 +159,42 @@ def generate_data():
 
     file1.close()
 
+def plot_function(file_path):
+    x_values = []
+    y_values = []
+
+    with open(file_path, 'rt') as file:
+        for line in file:
+            x, y = map(float, line.split())
+            x_values.append(x)
+            y_values.append(y)
+
+    plt.plot(x_values, y_values, label='sin(x)')
+    plt.xlabel('x')
+    plt.ylabel('y')
+    plt.title('Графік функції sin(x)')
+    plt.legend()
+    plt.grid(True)
+    plt.show()
+
+def plot_target_function():
+    x_range = np.linspace(-2, 2, 100)  
+    y_values = [F([x, 0], 1) for x in x_range] 
+
+    plt.plot(x_range, y_values, label='F(X)')
+    plt.xlabel('X')
+    plt.ylabel('F(X)')
+    plt.title('Графік цільової функції F(X)')
+    plt.legend()
+    plt.grid(True)
+    plt.show()
+
+
 if __name__ == "__main__":
     generate_data()
     main()
+
+    plot_function("in.txt")
+    # Example of how method works
+    plot_target_function()
+
