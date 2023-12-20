@@ -23,3 +23,10 @@
 **/tempCodeRunnerFile.py
 **/env/
 **/venv/
+
+**/*.log
+**/*.aux
+**/*.fdb_latexmk
+**/*.filters
+**/*.synctex.gz
+**/*.fls
