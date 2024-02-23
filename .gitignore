@@ -23,6 +23,7 @@
 **/tempCodeRunnerFile.py
 **/env/
 **/venv/
+**/.ipynb_checkpoints/
 
 **/*.log
 **/*.aux
