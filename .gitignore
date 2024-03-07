@@ -24,6 +24,7 @@
 **/env/
 **/venv/
 **/.ipynb_checkpoints/
+.ipynb_checkpoints/
 
 **/*.log
 **/*.aux
