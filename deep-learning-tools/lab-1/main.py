@@ -34,6 +34,7 @@ def create_model_relu():
     model = tf.keras.models.Sequential([
         tf.keras.layers.Dense(512, activation='relu', input_shape=(28*28,)),
         tf.keras.layers.Dense(256, activation='relu'),
+        tf.keras.layers.Dense(128, activation='relu'),
         tf.keras.layers.Dense(10, activation='softmax')
     ])
     model.compile(optimizer='adam',
@@ -43,8 +44,9 @@ def create_model_relu():
 
 def create_model_tanh():
     model = tf.keras.models.Sequential([
-        tf.keras.layers.Dense(512, activation='tanh', input_shape=(28*28,)),
-        tf.keras.layers.Dense(256, activation='tanh'),
+        tf.keras.layers.Dense(256, activation='tanh', input_shape=(28*28,)),
+        tf.keras.layers.Dense(128, activation='tanh'),
+        tf.keras.layers.Dense(64, activation='tanh'),
         tf.keras.layers.Dense(10, activation='softmax')
     ])
     model.compile(optimizer='adam',
@@ -52,15 +54,16 @@ def create_model_tanh():
     return model
 
 
-def create_model_relu_new():
+def create_model_selu():
     model = tf.keras.models.Sequential([
-        tf.keras.layers.Dense(256, activation='relu', input_shape=(28*28,)),
-        tf.keras.layers.Dense(128, activation='relu'),
-        tf.keras.layers.Dense(64, activation='relu'),
+        tf.keras.layers.Dense(384, activation='selu', input_shape=(28*28,)),
+        tf.keras.layers.Dense(192, activation='selu'),
+        tf.keras.layers.Dense(96, activation='selu'),
         tf.keras.layers.Dense(10, activation='softmax')
     ])
-    model.compile(optimizer='adam',
-                  loss='categorical_crossentropy', metrics=['accuracy'])
+    model.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=0.001),
+                  loss='categorical_crossentropy',
+                  metrics=['accuracy'])
     return model
 
 
@@ -88,7 +91,7 @@ if model_choice == 'ReLU':
 elif model_choice == 'Tanh':
     model = create_model_tanh()
 else:
-    model = create_model_relu_new()
+    model = create_model_selu()
 
 epochs = st.slider('Виберіть кількість епох:', 1, 20, 10)
 
