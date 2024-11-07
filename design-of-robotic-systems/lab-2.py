@@ -50,30 +50,31 @@ class GridWorld:
 
         return A
 
-    def construct_path(self, A):
-        """Construct path using directional markers"""
+    def construct_path(self, came_from):
+        """Construct path using directional markers based on came_from dictionary."""
         path_grid = np.full(self.grid.shape, ' ', dtype=str)
         current = self.finish
 
+        # Mapping of movement directions for each possible move
+        directions = {
+            (0, 1): '<',    # left
+            (1, 0): '^',    # up
+            (0, -1): '>',   # right
+            (-1, 0): 'v'    # down
+        }
+
+        # Trace back from the finish to the start, marking the path
         while current != self.start:
-            y, x = current
-            min_cost = float('inf')
-            next_pos = None
-            next_direction = None
+            prev = came_from.get(current)
+            if not prev:  # No path found
+                return path_grid
 
-            # Check all neighbors
-            directions = {(0, 1): '<', (1, 0): '^', (0, -1): '>', (-1, 0): 'v'}
-            for (dy, dx), direction in directions.items():
-                new_y, new_x = y + dy, x + dx
-                if (0 <= new_y < self.height and
-                    0 <= new_x < self.width and
-                        A[new_y, new_x] < min_cost):
-                    min_cost = A[new_y, new_x]
-                    next_pos = (new_y, new_x)
-                    next_direction = direction
+            # Determine the direction from previous cell to current
+            dy, dx = current[0] - prev[0], current[1] - prev[1]
+            direction = directions[(dy, dx)]
+            path_grid[current] = direction
 
-            path_grid[current] = next_direction
-            current = next_pos
+            current = prev
 
         return path_grid
 
@@ -148,15 +149,16 @@ A = world.breadth_first_search()
 print("\nCost matrix A:")
 print(A)
 
-path_grid = world.construct_path(A)
-print("\nPath with directional markers:")
-print(path_grid)
-
-# Run A*
-print("\nRunning A* Search...")
+# Create world and run A*
+world = GridWorld(create_example_grid())
 G, came_from = world.a_star_search()
 print("\nCost matrix G:")
 print(G)
+
+# Construct path using the came_from dictionary from A*
+path_grid = world.construct_path(came_from)
+print("\nPath with directional markers:")
+print(path_grid)
 
 # Compare effectiveness
 bfs_explored = np.count_nonzero(A < world.width * world.height)

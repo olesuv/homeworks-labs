@@ -108,6 +108,9 @@ def main():
     print("\nФінальний розподіл ймовірностей:")
     print(np.round(final_probabilities, 4))
 
+    print("\nМаксимальна ймовірність:")
+    print(np.max(final_probabilities))
+
 if __name__ == "__main__":
     main()
 
