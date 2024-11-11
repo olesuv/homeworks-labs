@@ -6,7 +6,7 @@ ENV TERM xterm
 
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
-# Update ROS packages and install Catkin
+# Update ROS packages Install Catkin
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y ros-melodic-catkin python-catkin-tools
 
@@ -16,7 +16,7 @@ RUN mkdir -p ./catkin_ws/src  && \
     source /opt/ros/melodic/setup.bash  && \
     catkin init
 
-# Install other libraries
+# Install other libraries 
 RUN apt-get install -y python-scipy 
 
 CMD ["bash"]
