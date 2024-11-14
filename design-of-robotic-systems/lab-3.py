@@ -1,7 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-
 class PIDSimulator:
     def __init__(self, Kp, Ki, Kd, time_end, y0, dt):
         self.Kp = Kp
@@ -32,7 +31,6 @@ class PIDSimulator:
             return
 
         plt.plot(self.y, label=f"Kp={self.Kp}, Ki={self.Ki}, Kd={self.Kd}")
-        plt.title("PID Controller Simulation")
         plt.xlabel("Time (steps)")
         plt.ylabel("Deviation y(t)")
         plt.legend()
@@ -46,11 +44,7 @@ dt = 1
 coefficients = [
     {"Kp": 0.4, "Ki": 0, "Kd": 0},
     {"Kp": 0.2, "Ki": 0.05, "Kd": 0},
-    {"Kp": 0.45, "Ki": 0, "Kd": 0.01},
-    {"Kp": 0.1, "Ki": 0.03, "Kd": 0.21},
-    {"Kp": 0.25, "Ki": 0.05, "Kd": 0},
-    {"Kp": 0.6, "Ki": 0, "Kd": 0.04},
-    {"Kp": 0.12, "Ki": 0.02, "Kd": 0.1},
+    {"Kp": 0.45, "Ki": 0, "Kd": 0.1},
 ]
 
 plt.figure(figsize=(12, 8))
@@ -60,4 +54,9 @@ for coeff in coefficients:
     simulator.plot()
 
 plt.title("PID Controller Simulation for Various Coefficient Sets")
-plt.show()
+plt.savefig("pid_simulation.png")  # Save the figure as a PNG file
+plt.close()  # Close the plot to avoid displaying it
+
+print(f"plot was saved to `plot_simulation.png`")
+
+
